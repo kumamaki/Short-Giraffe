@@ -3,10 +3,10 @@
     "displayName": "Short Giraffe",
     "description": "A dark theme with carefully picked colors",
     "version": "0.0.1",
-    "publisher": "kumamaki <8641684+kumamaki@users.noreply.github.com>",
+    "publisher": "kumamaki",
     "license": "WTFPL",
     "preview": true,
-    "logo": "./logo-simple.png",
+    "icon": "logo-simple.png",
     "engines": {
         "vscode": "^1.59.0"
     },
@@ -21,5 +21,9 @@
                 "path": "./themes/main.json"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kumamaki/Short-Giraffe"
     }
 }
