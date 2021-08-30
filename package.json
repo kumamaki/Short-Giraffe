@@ -1,0 +1,25 @@
+{
+    "name": "short-giraffe",
+    "displayName": "Short Giraffe",
+    "description": "A dark theme with carefully picked colors",
+    "version": "0.0.1",
+    "publisher": "kumamaki <8641684+kumamaki@users.noreply.github.com>",
+    "license": "WTFPL",
+    "preview": true,
+    "logo": "./logo-simple.png",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Short Giraffe",
+                "uiTheme": "vs-dark",
+                "path": "./themes/main.json"
+            }
+        ]
+    }
+}
