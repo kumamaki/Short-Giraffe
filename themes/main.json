@@ -114,13 +114,14 @@
         "editorOverviewRuler.deletedForeground": "#f2798399",
         "editorOverviewRuler.errorForeground": "#ff3333",
         "editorOverviewRuler.warningForeground": "#F29E74",
-        "diffEditor.insertedTextBackground": "#bae67e26",
-        "diffEditor.removedTextBackground": "#f29e7426",
+        "diffEditor.insertedTextBackground": "#82F28710",
+        "diffEditor.removedTextBackground": "#FF747410",
         "editorWidget.background": "#232834",
-        "editorSuggestWidget.background": "#232834",
+        "editorSuggestWidget.background": "#2E3543",
         "editorSuggestWidget.border": "#101521",
-        "editorSuggestWidget.highlightForeground": "#F29E74",
-        "editorSuggestWidget.selectedBackground": "#191e2a",
+        "editorSuggestWidget.highlightForeground": "#FF7474",
+        "editorSuggestWidget.selectedBackground": "#82F28735",
+        "editorSuggestWidget.selectedForeground": "#F7F7E5",
         "editorHoverWidget.background": "#232834",
         "editorHoverWidget.border": "#101521",
         "debugExceptionWidget.border": "#191e2a",
@@ -205,15 +206,13 @@
     },
     "tokenColors": [
         {
-            "name": "Keywords and Build-ins",
+            "name": "Keywords and Built-ins",
             "scope": [
-                "meta.function storage.type",
                 "meta.var.expr storage.type",
                 "meta.class storage.type",
                 "storage.modifier",
                 "new.expr entity.name.function",
                 "keyword",
-                "support.class.builtin",
                 "constant.language.boolean",
                 "constant.language.null",
                 "storage.type.primitive",
@@ -222,6 +221,26 @@
             "settings": {
                 "foreground": "#FFE074",
                 "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keywords and Built-ins",
+            "scope": [
+                "meta.function storage.type",
+            ],
+            "settings": {
+                "foreground": "#FFB681",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Built-in objects",
+            "scope": [
+                "support.class.builtin",
+            ],
+            "settings": {
+                "foreground": "#FFB681",
+                "fontStyle": "bold"
             }
         },
         {
@@ -327,7 +346,7 @@
         {
             "name": "Strings",
             "scope": [
-                "string.quoted"
+                "string"
             ],
             "settings": {
                 "foreground": "#FC9292"
@@ -345,7 +364,8 @@
         {
             "name": "Imports",
             "scope": [
-                "variable.other.readwrite"
+                "meta.import variable.other.readwrite",
+                "variable.other.object"
             ],
             "settings": {
                 "foreground": "#9BC9FF"
@@ -368,15 +388,6 @@
             ],
             "settings": {
                 "foreground": "#7E8694"
-            }
-        },
-        {
-            "name": "[Vue] After first level properties",
-            "scope": [
-                "source.vue meta.object.member meta.object.member meta.object-literal.key"
-            ],
-            "settings": {
-                "foreground": "#BAB4FF"
             }
         },
         {
