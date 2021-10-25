@@ -226,7 +226,7 @@
         {
             "name": "Keywords and Built-ins",
             "scope": [
-                "meta.function storage.type",
+                "meta.function storage.type"
             ],
             "settings": {
                 "foreground": "#FFB681",
@@ -236,7 +236,7 @@
         {
             "name": "Built-in objects",
             "scope": [
-                "support.class.builtin",
+                "support.class.builtin"
             ],
             "settings": {
                 "foreground": "#FFB681",
@@ -500,7 +500,8 @@
         {
             "name": "[JSON] Value",
             "scope": [
-                "meta.structure.dictionary.value"
+                "meta.structure.dictionary.value",
+                "string.quoted.double.json"
             ],
             "settings": {
                 "foreground": "#FFE074"
