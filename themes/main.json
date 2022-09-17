@@ -445,14 +445,23 @@
             "name": "[CSS] Selectors",
             "scope": [
                 "source.css entity.other.attribute-name.class",
-                "source.css meta.property-list"
+                "source.postcss entity.other.attribute-name.class",
+                "source.scss entity.other.attribute-name.class",
+                "source.less entity.other.attribute-name.class",
+                "source.css meta.property-list",
+                "source.postcss meta.property-list",
+                "source.scss meta.property-list",
+                "source.less meta.property-list"
             ],
             "settings": {}
         },
         {
             "name": "[CSS] Property",
             "scope": [
-                "source.css meta.property-list"
+                "source.css meta.property-list",
+                "source.postcss meta.property-list",
+                "source.scss meta.property-list",
+                "source.less meta.property-list"
             ],
             "settings": {
                 "foreground": "#f7f7e5"
@@ -461,7 +470,10 @@
         {
             "name": "[CSS] Punctuations",
             "scope": [
-                "source.css punctuation.function"
+                "source.css punctuation.function",
+                "source.postcss punctuation.function",
+                "source.scss punctuation.function",
+                "source.less punctuation.function"
             ],
             "settings": {
                 "fontStyle": "normal",
@@ -472,7 +484,13 @@
             "name": "[CSS] Variable",
             "scope": [
                 "source.css variable",
-                "source.css punctuation.definition.variable"
+                "source.postcss variable",
+                "source.scss variable",
+                "source.less variable",
+                "source.css punctuation.definition.variable",
+                "source.postcss punctuation.definition.variable",
+                "source.scss punctuation.definition.variable",
+                "source.less punctuation.definition.variable"
             ],
             "settings": {
                 "foreground": "#9BC9FF"
@@ -481,7 +499,10 @@
         {
             "name": "[CSS] Function",
             "scope": [
-                "source.css meta.function.misc.css"
+                "source.css meta.function.misc.css",
+                "source.postcss meta.function.misc.css",
+                "source.scss meta.function.misc.css",
+                "source.less meta.function.misc.css"
             ],
             "settings": {
                 "foreground": "#45CAC2",
@@ -492,7 +513,13 @@
             "name": "[CSS] Constants",
             "scope": [
                 "source.css support.constant",
-                "source.css constant.numeric"
+                "source.postcss support.constant",
+                "source.scss support.constant",
+                "source.less support.constant",
+                "source.css constant.numeric",
+                "source.postcss constant.numeric",
+                "source.scss constant.numeric",
+                "source.less constant.numeric"
             ],
             "settings": {
                 "foreground": "#FFB480"
