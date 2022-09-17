@@ -26,7 +26,7 @@ This is a **from scratch** theme, which has been made with subtle, yet playful c
 
 ## Color Pallette
 
-<img  src="./pallette.png" alt="Logo - A giraffe illustration peeking through a circle" height="570">
+<img  src="./pallette.jpg" alt="Logo - A giraffe illustration peeking through a circle" height="570">
 
 ## Preview
 
