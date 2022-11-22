@@ -99,6 +99,8 @@
         "editor.findRangeHighlightBackground": "#262f3e",
         "editor.findRangeHighlightBorder": "#191F2B00",
         "editor.lineHighlightBackground": "#222833",
+        "editorInlayHint.foreground": "#9be7ffBB",
+        "editorInlayHint.background": "#FFFFFF00",
         "editorLink.activeForeground": "#45CAC2",
         "editor.rangeHighlightBackground": "#191e2a",
         "editorWhitespace.foreground": "#707a8c66",
