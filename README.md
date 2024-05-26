@@ -1,20 +1,31 @@
 <h1 align="center">
-Short Giraffe for VSCode
+<b>Short Giraffe</b> Theme
 </h1>
-
 <p align="center">
-Minimalistic, dark and easy-to-eye theme for VSCode.
+Minimalistic, dark and easy-to-eye syntax theme for VSCode and Zed.
 </p>
+
 
 <div align="center">
 <img  src="./logo.png" alt="Logo - A giraffe illustration peeking through a circle" height="270">
 </div>
+<div align="center">
+<h3>Short on drama, long on code visibility</h3>
+</div>
+
 
 ---
 
-This is a **from scratch** theme, which has been made with subtle, yet playful colors.
+**Built from the ground up,** the Short Giraffe Theme uses a playful yet subtle color palette for a your coding experience.
 
-## Instalation
+## Instalation for Zed
+
+- Run Zed: Extensions
+- Search for Short Giraffe Theme and install
+- Done 🎉
+
+## Instalation for VSCode
+
 - Open Extensions on the sidebar.
 - Search for **Short Giraffe** Theme.
 - Install & reload.
@@ -22,28 +33,15 @@ This is a **from scratch** theme, which has been made with subtle, yet playful c
 - Pick **Short Giraffe** from the list and hit enter.
 - Done 🎉
 
+
+
 ---
 
 ## Color Pallette
 
+A harmonious blend of playful accents and soothing tones that will keep you focused and engaged.
+
 <img  src="./pallette.jpg" alt="Logo - A giraffe illustration peeking through a circle" height="570">
-
-## Preview
-
-### HTML
-<img  src="./demo/screenshots/html.png" alt="Screenshot - HTML" width="600">
-
-### Javascript
-<img  src="./demo/screenshots/javascript.png" alt="Screenshot - Javascript" width="600">
-
-### Vue
-<img  src="./demo/screenshots/vue.png" alt="Screenshot - Vue" width="600">
-
-### JSON
-<img  src="./demo/screenshots/json.png" alt="Screenshot - JSON" width="600">
-
-### Markdown
-<img  src="./demo/screenshots/markdown.png" alt="Screenshot - Markdown" width="600">
 
 ---
 
