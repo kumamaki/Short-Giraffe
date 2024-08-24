@@ -18,13 +18,13 @@ Minimalistic, dark and easy-to-eye syntax theme for VSCode and Zed.
 
 **Built from the ground up,** the Short Giraffe Theme uses a playful yet subtle color palette for a your coding experience.
 
-## Instalation for Zed
+## Installation for Zed
 
 - Run Zed: Extensions
 - Search for Short Giraffe Theme and install
 - Done 🎉
 
-## Instalation for VSCode
+## Installation for VSCode
 
 - Open Extensions on the sidebar.
 - Search for **Short Giraffe** Theme.
@@ -45,4 +45,4 @@ A harmonious blend of playful accents and soothing tones that will keep you focu
 
 ---
 
-🦒  Cheers to the **Short Giraffe** 🦒
+🦒  Cheers to the **Short Giraffes** 🦒

@@ -15,7 +15,7 @@
                 "border.focused": "#FFB69E",
                 "border.selected": "#FFB69E",
 
-                "panel.background": "#0C0E13",
+                "panel.background": "#0d1016",
 
                 "created": "#80D6AD",
                 "deleted": "#E4A2AC",
@@ -23,7 +23,7 @@
                 "ignored": "#535A69",
                 "modified": "#FFB69E",
 
-                "status_bar.background": "#101218",
+                "status_bar.background": "#12161e",
 
                 "warning.background": "#8C8340",
                 "warning.border": "#8C8340",
@@ -38,12 +38,12 @@
                 "editor.document_highlight.read_background": "#373D4A",
 
                 "text": "#EDEFF4",
-                "text.muted": "#82899A",
-                "text.placeholder": "#82899A",
+                "text.muted": "#a6a7ab",
+                "text.placeholder": "#a6a7ab",
                 "text.disabled": "#535A69",
                 "text.accent": "#FFB69E",
 
-                "editor.background": "#101218",
+                "editor.background": "#12161e",
                 "editor.foreground": "#EDEFF4",
                 "editor.line_number": "#333842",
                 "editor.invisible": "#333842",
@@ -51,7 +51,7 @@
                 "editor.wrap_guide": "#333842",
                 "editor.active_line.background": "#1B1F28",
                 "editor.highlighted_line.background": "#222630",
-                "editor.gutter.background": "#101218",
+                "editor.gutter.background": "#12161e",
 
                 "elevated_surface.background": "#0C0E13",
 
@@ -63,13 +63,13 @@
                 "tab.active_background": "#1B1F28",
                 "tab.inactive_background": "#13161D",
 
-                "tab_bar.background": "#101218",
+                "tab_bar.background": "#12161e",
 
                 "title_bar.background": "#0C0E13",
 
-                "toolbar.background": "#101218",
+                "toolbar.background": "#12161e",
 
-                "predictive": "#82899A",
+                "predictive": "#a6a7ab",
 
                 "players": [
                     {
@@ -170,16 +170,16 @@
                         "color": "#333842"
                     },
                     "punctuation.bracket": {
-                        "color": "#82899A"
+                        "color": "#a6a7ab"
                     },
                     "punctuation.delimiter": {
-                        "color": "#82899A"
+                        "color": "#a6a7ab"
                     },
                     "punctuation.list_marker": {
-                        "color": "#82899A"
+                        "color": "#a6a7ab"
                     },
                     "punctuation.special": {
-                        "color": "#82899A"
+                        "color": "#a6a7ab"
                     },
                     "string": {
                         "color": "#E4A2AC"
