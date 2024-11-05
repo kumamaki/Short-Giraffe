@@ -17,7 +17,7 @@
             {
                 "label": "Short Giraffe",
                 "uiTheme": "vs-dark",
-                "path": "./vscode/vscode.json"
+                "path": "./vscode/theme.json"
             }
         ]
     },

@@ -23,7 +23,7 @@
                 "ignored": "#535A69",
                 "modified": "#FFB69E",
 
-                "status_bar.background": "#12161e",
+                "status_bar.background": "#141821",
 
                 "warning.background": "#8C8340",
                 "warning.border": "#8C8340",
@@ -43,15 +43,15 @@
                 "text.disabled": "#535A69",
                 "text.accent": "#FFB69E",
 
-                "editor.background": "#12161e",
+                "editor.background": "#141821",
                 "editor.foreground": "#EDEFF4",
                 "editor.line_number": "#333842",
                 "editor.invisible": "#333842",
-                "editor.indent_guide": "#1B1F28",
+                "editor.indent_guide": "#ffffff10",
                 "editor.wrap_guide": "#333842",
                 "editor.active_line.background": "#1B1F28",
                 "editor.highlighted_line.background": "#222630",
-                "editor.gutter.background": "#12161e",
+                "editor.gutter.background": "#141821",
 
                 "elevated_surface.background": "#0C0E13",
 
@@ -63,11 +63,11 @@
                 "tab.active_background": "#1B1F28",
                 "tab.inactive_background": "#13161D",
 
-                "tab_bar.background": "#12161e",
+                "tab_bar.background": "#141821",
 
                 "title_bar.background": "#0C0E13",
 
-                "toolbar.background": "#12161e",
+                "toolbar.background": "#141821",
 
                 "predictive": "#a6a7ab",
 
