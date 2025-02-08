@@ -1,6 +1,6 @@
 id = "short-giraffe-theme"
 name = "Short Giraffe Theme"
-version = "2.0.0"
+version = "2.2.0"
 schema_version = 1
 authors = ["kumamaki <8641684+kumamaki@users.noreply.github.com>"]
 description = "A dark theme with carefully picked colors"

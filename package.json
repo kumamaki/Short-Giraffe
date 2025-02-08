@@ -1,31 +1,31 @@
 {
-    "name": "short-giraffe",
-    "displayName": "Short Giraffe",
-    "description": "A dark theme with carefully picked colors",
-    "author": "kumamaki <8641684+kumamaki@users.noreply.github.com>",
-    "version": "2.1.0",
-    "publisher": "kumamaki",
-    "license": "WTFPL",
-    "preview": true,
-    "icon": "logo-simple.png",
-    "engines": {
-        "vscode": "^1.59.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Short Giraffe",
-                "uiTheme": "vs-dark",
-                "path": "./vscode/theme.json"
-            }
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kumamaki/Short-Giraffe"
-    },
-    "packageManager": "pnpm@9.12.3"
+	"name": "short-giraffe",
+	"displayName": "Short Giraffe",
+	"description": "A dark theme with carefully picked colors",
+	"author": "kumamaki <8641684+kumamaki@users.noreply.github.com>",
+	"version": "2.2.0",
+	"publisher": "kumamaki",
+	"license": "WTFPL",
+	"preview": true,
+	"icon": "logo-simple.png",
+	"engines": {
+		"vscode": "^1.59.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Short Giraffe",
+				"uiTheme": "vs-dark",
+				"path": "./vscode/theme.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kumamaki/Short-Giraffe"
+	},
+	"packageManager": "pnpm@9.12.3"
 }
