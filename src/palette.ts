@@ -609,6 +609,489 @@ export const semantic = {
 	playerPink: colors.pink300,
 	playerYellow: colors.olive300,
 	playerGreen: colors.green450,
+
+	// =========================================================================
+	// STICKY SCROLL (VS Code)
+	// =========================================================================
+	stickyScrollBackground: colors.gray725,
+	stickyScrollBorder: colors.gray700,
+	stickyScrollShadow: colors.gray775,
+	stickyScrollGutter: colors.gray725,
+	stickyScrollHover: colors.gray650,
+
+	// =========================================================================
+	// GHOST TEXT / COPILOT (VS Code)
+	// =========================================================================
+	ghostTextForeground: colors.gray75,
+	ghostTextBackground: colors.transparent,
+	ghostTextBorder: colors.transparent,
+
+	// =========================================================================
+	// INLINE CHAT & AI FEATURES (VS Code)
+	// =========================================================================
+	inlineChatBackground: colors.gray550,
+	inlineChatBorder: colors.gray700,
+	inlineChatShadow: colors.gray775,
+	inlineChatRegionHighlight: `${colors.coral500}15`,
+	inlineChatSendButtonBackground: colors.coral500,
+	inlineChatSendButtonForeground: colors.gray725,
+	inlineChatSendButtonHover: colors.coral600,
+	inlineChatRequestBorder: colors.gray700,
+	inlineEditGutterPrimaryBorder: colors.coral500,
+	inlineEditGutterPrimaryForeground: colors.coral500,
+	inlineEditGutterPrimaryBackground: `${colors.coral500}20`,
+	inlineEditGutterSecondaryBorder: colors.gray300,
+	inlineEditGutterSecondaryForeground: colors.gray300,
+	inlineEditGutterSecondaryBackground: `${colors.gray300}20`,
+	inlineEditGutterSuccessBorder: colors.green500,
+	inlineEditGutterSuccessForeground: colors.green500,
+	inlineEditGutterSuccessBackground: `${colors.green500}20`,
+	inlineEditGutterBackground: colors.gray725,
+	inlineEditOriginalChangedLine: `${colors.red500}15`,
+	inlineEditOriginalChangedText: `${colors.red500}30`,
+	inlineEditModifiedChangedLine: `${colors.green500}15`,
+	inlineEditModifiedChangedText: `${colors.green500}30`,
+	inlineEditOriginalBorder: colors.red500,
+	inlineEditModifiedBorder: colors.green500,
+
+	// =========================================================================
+	// COMMAND CENTER (VS Code)
+	// =========================================================================
+	commandCenterBackground: colors.gray575,
+	commandCenterForeground: colors.cream200,
+	commandCenterBorder: colors.gray700,
+	commandCenterInactiveForeground: colors.gray175,
+	commandCenterInactiveBorder: colors.gray700,
+	commandCenterActiveForeground: colors.coral500,
+	commandCenterActiveBorder: colors.coral500,
+
+	// =========================================================================
+	// BREADCRUMBS (VS Code)
+	// =========================================================================
+	breadcrumbForeground: colors.gray175,
+	breadcrumbBackground: colors.gray725,
+	breadcrumbFocusForeground: colors.coral500,
+	breadcrumbActiveSelection: colors.cream200,
+	breadcrumbPickerBackground: colors.gray575,
+
+	// =========================================================================
+	// MENU BAR (VS Code)
+	// =========================================================================
+	menuBackground: colors.gray575,
+	menuForeground: colors.cream200,
+	menuBorder: colors.gray700,
+	menuSelectionBackground: colors.gray650,
+	menuSelectionForeground: colors.coral500,
+	menuSelectionBorder: colors.transparent,
+	menuSeparator: colors.gray450,
+	menubarSelectionBackground: colors.gray650,
+	menubarSelectionForeground: colors.coral500,
+	menubarSelectionBorder: colors.transparent,
+
+	// =========================================================================
+	// TESTING (VS Code)
+	// =========================================================================
+	testingPassed: colors.green500,
+	testingFailed: colors.red500,
+	testingSkipped: colors.yellow500,
+	testingErrored: colors.gray300,
+	testingQueued: colors.gray175,
+	testingUnset: colors.gray175,
+	testingCoveredBackground: `${colors.green500}20`,
+	testingUncoveredBackground: `${colors.red500}20`,
+	testingCoveredGutter: colors.green500,
+	testingUncoveredGutter: colors.red500,
+	testingRunAction: colors.green500,
+	testingPeekBorder: colors.coral500,
+	testingPeekHeaderBackground: colors.gray550,
+	testingMessageError: colors.red500,
+	testingMessageErrorBackground: `${colors.red500}15`,
+	testingMessageInfo: colors.cyan500,
+	testingMessageInfoBackground: `${colors.cyan500}15`,
+
+	// =========================================================================
+	// MERGE CONFLICTS (VS Code)
+	// =========================================================================
+	mergeCurrentHeader: `${colors.cyan500}40`,
+	mergeCurrentContent: `${colors.cyan500}20`,
+	mergeIncomingHeader: `${colors.purple400}40`,
+	mergeIncomingContent: `${colors.purple400}20`,
+	mergeCommonHeader: `${colors.gray300}40`,
+	mergeCommonContent: `${colors.gray300}20`,
+	mergeBorder: colors.gray700,
+	mergeEditorChangeBackground: `${colors.coral500}20`,
+	mergeEditorChangeWordBackground: `${colors.coral500}40`,
+	mergeEditorConflictFocusedBorder: colors.coral500,
+	mergeEditorConflictUnfocusedBorder: colors.gray300,
+
+	// =========================================================================
+	// NOTIFICATIONS EXTENDED (VS Code)
+	// =========================================================================
+	notificationCenterBorder: colors.gray700,
+	notificationHeaderForeground: colors.cream200,
+	notificationHeaderBackground: colors.gray550,
+	notificationToastBorder: colors.gray700,
+	notificationForeground: colors.cream200,
+	notificationBorder: colors.gray700,
+	notificationErrorIcon: colors.red500,
+	notificationWarningIcon: colors.coral500,
+	notificationInfoIcon: colors.cyan500,
+	notificationLinkForeground: colors.cyan500,
+
+	// =========================================================================
+	// BRACKET COLORIZATION (VS Code)
+	// =========================================================================
+	bracketColor1: colors.coral500,
+	bracketColor2: colors.yellow500,
+	bracketColor3: colors.cyan500,
+	bracketColor4: colors.purple400,
+	bracketColor5: colors.blue400,
+	bracketColor6: colors.green500,
+	bracketUnexpected: colors.red500,
+	bracketGuideActive1: `${colors.coral500}80`,
+	bracketGuideActive2: `${colors.yellow500}80`,
+	bracketGuideActive3: `${colors.cyan500}80`,
+	bracketGuideActive4: `${colors.purple400}80`,
+	bracketGuideActive5: `${colors.blue400}80`,
+	bracketGuideActive6: `${colors.green500}80`,
+	bracketGuideInactive1: `${colors.coral500}40`,
+	bracketGuideInactive2: `${colors.yellow500}40`,
+	bracketGuideInactive3: `${colors.cyan500}40`,
+	bracketGuideInactive4: `${colors.purple400}40`,
+	bracketGuideInactive5: `${colors.blue400}40`,
+	bracketGuideInactive6: `${colors.green500}40`,
+
+	// =========================================================================
+	// DEBUG TOKENS (VS Code)
+	// =========================================================================
+	debugTokenName: colors.cyan500,
+	debugTokenValue: colors.cream300,
+	debugTokenString: colors.pink500,
+	debugTokenBoolean: colors.yellow500,
+	debugTokenNumber: colors.coral200,
+	debugTokenError: colors.red500,
+	debugValueChanged: colors.coral500,
+	debugExceptionLabelForeground: colors.cream200,
+	debugExceptionLabelBackground: colors.red800,
+	debugStateLabelForeground: colors.cream200,
+	debugStateLabelBackground: colors.gray550,
+	debugBreakpointIcon: colors.red500,
+	debugBreakpointDisabled: colors.gray300,
+	debugBreakpointUnverified: colors.gray175,
+	debugStartIcon: colors.green500,
+	debugPauseIcon: colors.yellow500,
+	debugStopIcon: colors.red500,
+	debugDisconnectIcon: colors.red500,
+	debugRestartIcon: colors.green500,
+	debugStepIcon: colors.cyan500,
+	debugContinueIcon: colors.green500,
+	debugConsoleInfo: colors.cyan500,
+	debugConsoleWarning: colors.coral500,
+	debugConsoleError: colors.red500,
+	debugConsoleSource: colors.gray175,
+	debugConsoleInputIcon: colors.coral500,
+
+	// =========================================================================
+	// TERMINAL DECORATIONS (VS Code)
+	// =========================================================================
+	terminalDecorationDefault: colors.gray300,
+	terminalDecorationSuccess: `${colors.green500}30`,
+	terminalDecorationError: `${colors.red500}30`,
+	terminalTabActiveBorder: colors.coral500,
+	terminalStickyScrollBackground: colors.gray725,
+	terminalStickyScrollBorder: colors.gray700,
+	terminalStickyScrollHover: colors.gray650,
+	terminalFindMatch: `${colors.coral500}30`,
+	terminalFindMatchBorder: colors.coral500,
+	terminalFindMatchHighlight: `${colors.coral500}20`,
+	terminalFindMatchHighlightBorder: `${colors.coral500}50`,
+	terminalOverviewCursor: colors.gray100,
+	terminalOverviewFindMatch: colors.coral500,
+
+	// =========================================================================
+	// NOTEBOOK (VS Code)
+	// =========================================================================
+	notebookCellBackground: colors.gray725,
+	notebookCellBorder: colors.gray700,
+	notebookCellStatusBarHover: colors.gray650,
+	notebookCellToolbarSeparator: colors.gray450,
+	notebookFocusedCellBorder: colors.coral500,
+	notebookFocusedEditorBorder: colors.coral500,
+	notebookSelectedCellBackground: colors.gray650,
+	notebookSelectedCellBorder: colors.gray575,
+	notebookInactiveFocusedCellBorder: colors.gray450,
+	notebookOutputBackground: colors.gray775,
+	notebookOutputBorder: colors.gray700,
+	notebookScrollbarSlider: colors.black30,
+	notebookScrollbarSliderHover: colors.black40,
+	notebookScrollbarSliderActive: colors.black50,
+	notebookRunningIcon: colors.coral500,
+	notebookSuccessIcon: colors.green500,
+	notebookErrorIcon: colors.red500,
+	notebookEditorBackground: colors.gray725,
+
+	// =========================================================================
+	// RADIO & CHECKBOX (VS Code)
+	// =========================================================================
+	radioActiveBackground: colors.coral500,
+	radioActiveBorder: colors.coral500,
+	radioActiveForeground: colors.gray725,
+	radioInactiveBackground: colors.gray725,
+	radioInactiveBorder: colors.gray300,
+	radioInactiveForeground: colors.cream200,
+	radioInactiveHoverBackground: colors.gray650,
+	checkboxBorder: colors.gray300,
+	checkboxSelectBackground: colors.coral500,
+	checkboxSelectBorder: colors.coral500,
+
+	// =========================================================================
+	// GIT DECORATION EXTENSIONS (VS Code)
+	// =========================================================================
+	gitRenamed: colors.cyan400,
+	gitCopied: colors.green400,
+
+	// =========================================================================
+	// KEYBINDING LABELS (VS Code)
+	// =========================================================================
+	keybindingBackground: colors.gray575,
+	keybindingForeground: colors.cream200,
+	keybindingBorder: colors.gray450,
+	keybindingBottomBorder: colors.gray400,
+
+	// =========================================================================
+	// BANNER (VS Code)
+	// =========================================================================
+	bannerBackground: colors.gray550,
+	bannerForeground: colors.cream200,
+	bannerIconForeground: colors.coral500,
+
+	// =========================================================================
+	// WELCOME PAGE (VS Code)
+	// =========================================================================
+	welcomePageBackground: colors.gray725,
+	welcomePageTileBackground: colors.gray650,
+	welcomePageTileHoverBackground: colors.gray575,
+	welcomePageTileBorder: colors.gray700,
+	welcomePageProgressBackground: colors.gray700,
+	welcomePageProgressForeground: colors.coral500,
+
+	// =========================================================================
+	// WALKTHROUGH (VS Code)
+	// =========================================================================
+	walkthroughStepTitle: colors.coral500,
+
+	// =========================================================================
+	// SEARCH EDITOR (VS Code)
+	// =========================================================================
+	searchEditorFindMatch: `${colors.coral500}30`,
+	searchEditorFindMatchBorder: colors.coral500,
+	searchEditorTextInputBorder: colors.gray300,
+
+	// =========================================================================
+	// SYMBOL ICONS (VS Code)
+	// =========================================================================
+	symbolIconArray: colors.coral500,
+	symbolIconBoolean: colors.yellow500,
+	symbolIconClass: colors.purple400,
+	symbolIconColor: colors.coral500,
+	symbolIconConstant: colors.yellow500,
+	symbolIconConstructor: colors.cyan500,
+	symbolIconEnumerator: colors.coral100,
+	symbolIconEnumeratorMember: colors.pink500,
+	symbolIconEvent: colors.coral500,
+	symbolIconField: colors.blue400,
+	symbolIconFile: colors.gray175,
+	symbolIconFolder: colors.gray175,
+	symbolIconFunction: colors.cyan500,
+	symbolIconInterface: colors.purple400,
+	symbolIconKey: colors.yellow500,
+	symbolIconKeyword: colors.yellow500,
+	symbolIconMethod: colors.cyan500,
+	symbolIconModule: colors.gray175,
+	symbolIconNamespace: colors.purple400,
+	symbolIconNull: colors.gray175,
+	symbolIconNumber: colors.coral200,
+	symbolIconObject: colors.coral500,
+	symbolIconOperator: colors.yellow400,
+	symbolIconPackage: colors.gray175,
+	symbolIconProperty: colors.cream500,
+	symbolIconReference: colors.blue400,
+	symbolIconSnippet: colors.gray175,
+	symbolIconString: colors.pink500,
+	symbolIconStruct: colors.purple400,
+	symbolIconText: colors.cream300,
+	symbolIconTypeParameter: colors.purple500,
+	symbolIconUnit: colors.gray175,
+	symbolIconVariable: colors.blue500,
+
+	// =========================================================================
+	// CHARTS (VS Code)
+	// =========================================================================
+	chartsRed: colors.red500,
+	chartsOrange: colors.coral500,
+	chartsYellow: colors.yellow500,
+	chartsGreen: colors.green500,
+	chartsBlue: colors.blue400,
+	chartsPurple: colors.purple400,
+	chartsForeground: colors.cream200,
+	chartsLines: colors.gray450,
+
+	// =========================================================================
+	// PORTS (VS Code)
+	// =========================================================================
+	portsRunningProcess: colors.green500,
+
+	// =========================================================================
+	// COMMENTS VIEW (VS Code)
+	// =========================================================================
+	commentsResolvedIcon: colors.gray300,
+	commentsUnresolvedIcon: colors.coral500,
+
+	// =========================================================================
+	// ACTION BAR (VS Code)
+	// =========================================================================
+	actionBarToggled: colors.gray575,
+
+	// =========================================================================
+	// SIMPLE FIND WIDGET (VS Code)
+	// =========================================================================
+	simpleFindWidgetBorder: colors.gray700,
+
+	// =========================================================================
+	// SCM (Source Control) (VS Code)
+	// =========================================================================
+	scmHistoryAdditions: colors.green500,
+	scmHistoryDeletions: colors.red500,
+	scmHistoryStatisticsBorder: colors.gray700,
+	scmHistorySelectedStatisticsBorder: colors.coral500,
+
+	// =========================================================================
+	// ZED ELEMENT STATES
+	// =========================================================================
+	zedElementActive: colors.gray550,
+	zedElementDisabled: colors.gray700,
+	zedElementSelected: colors.gray575,
+	zedGhostElementActive: colors.gray600,
+	zedGhostElementBackground: colors.transparent,
+	zedGhostElementDisabled: colors.gray700,
+	zedGhostElementSelected: colors.gray650,
+
+	// =========================================================================
+	// ZED ICON COLORS
+	// =========================================================================
+	zedIcon: colors.gray75,
+	zedIconAccent: colors.coral400,
+	zedIconDisabled: colors.gray250,
+	zedIconMuted: colors.gray175,
+	zedIconPlaceholder: colors.gray300,
+
+	// =========================================================================
+	// ZED STATUS INDICATORS
+	// =========================================================================
+	zedRenamed: colors.cyan400,
+	zedHidden: colors.gray250,
+	zedUnreachable: colors.gray300,
+	zedSuccessBackground: `${colors.green500}20`,
+	zedSuccessBorder: colors.green500,
+	zedInfoBackground: `${colors.cyan400}20`,
+	zedInfoBorder: colors.cyan400,
+	zedHiddenBackground: `${colors.gray250}20`,
+	zedHiddenBorder: colors.gray250,
+	zedRenamedBackground: `${colors.cyan400}20`,
+	zedRenamedBorder: colors.cyan400,
+	zedUnreachableBackground: `${colors.gray300}20`,
+	zedUnreachableBorder: colors.gray300,
+
+	// =========================================================================
+	// ZED BORDER VARIANTS
+	// =========================================================================
+	zedBorderTransparent: colors.transparent,
+	zedBorderVariant: colors.gray700,
+	zedBorderDisabled: colors.gray700,
+
+	// =========================================================================
+	// ZED EDITOR REFINEMENTS
+	// =========================================================================
+	zedEditorActiveLineNumber: colors.gray100,
+	zedDocHighlightWrite: `${colors.coral400}30`,
+	zedEditorDocHighlightWrite: `${colors.coral400}30`,
+	zedEditorSubheaderBackground: colors.gray775,
+	zedEditorActiveWrapGuide: colors.gray400,
+
+	// =========================================================================
+	// ZED PANEL FOCUS
+	// =========================================================================
+	zedPanelFocusedBorder: colors.coral400,
+	zedPaneFocusedBorder: colors.coral400,
+
+	// =========================================================================
+	// ZED SCROLLBAR REFINEMENTS
+	// =========================================================================
+	zedScrollbarThumbBorder: colors.transparent,
+	zedScrollbarThumbHover: `${colors.white}25`,
+	zedScrollbarTrackBackground: colors.transparent,
+	zedScrollbarTrackBorder: colors.transparent,
+
+	// =========================================================================
+	// ZED DROP TARGET
+	// =========================================================================
+	zedDropTarget: `${colors.coral400}30`,
+
+	// =========================================================================
+	// ZED SEARCH
+	// =========================================================================
+	zedSearchMatch: `${colors.coral500}30`,
+
+	// =========================================================================
+	// ZED LINK
+	// =========================================================================
+	zedLinkTextHover: colors.cyan400,
+
+	// =========================================================================
+	// ZED SYNTAX EXTENDED (previously empty tokens)
+	// =========================================================================
+	zedSyntaxConstructor: colors.cyan500,
+	zedSyntaxPreproc: colors.purple300,
+	zedSyntaxPrimary: colors.cream150,
+	zedSyntaxTitle: colors.pink500,
+	zedSyntaxVariant: colors.coral100,
+	zedSyntaxPredictive: colors.gray75,
+	zedSyntaxStringEscape: colors.coral500,
+	zedSyntaxStringRegex: colors.coral400,
+	zedSyntaxStringSpecial: colors.coral500,
+	zedSyntaxStringSymbol: colors.cyan400,
+	zedSyntaxLinkText: colors.cyan400,
+	zedSyntaxLinkUri: colors.blue400,
+
+	// =========================================================================
+	// ZED TERMINAL COLORS
+	// =========================================================================
+	zedTerminalBackground: colors.gray825,
+	zedTerminalForeground: colors.gray25,
+	zedTerminalBlack: colors.gray700,
+	zedTerminalRed: colors.red400,
+	zedTerminalGreen: colors.green500,
+	zedTerminalYellow: colors.yellow600,
+	zedTerminalBlue: colors.blue200,
+	zedTerminalMagenta: colors.purple200,
+	zedTerminalCyan: colors.cyan300,
+	zedTerminalWhite: colors.whiteAlt,
+	zedTerminalBrightBlack: colors.terminalBlackBright,
+	zedTerminalBrightRed: colors.red350,
+	zedTerminalBrightGreen: colors.green400,
+	zedTerminalBrightYellow: colors.yellow200,
+	zedTerminalBrightBlue: colors.blue150,
+	zedTerminalBrightMagenta: colors.purple150,
+	zedTerminalBrightCyan: colors.cyan200,
+	zedTerminalBrightWhite: colors.white,
+	zedTerminalDimBlack: colors.gray800,
+	zedTerminalDimRed: `${colors.red400}99`,
+	zedTerminalDimGreen: `${colors.green500}99`,
+	zedTerminalDimYellow: `${colors.yellow600}99`,
+	zedTerminalDimBlue: `${colors.blue200}99`,
+	zedTerminalDimMagenta: `${colors.purple200}99`,
+	zedTerminalDimCyan: `${colors.cyan300}99`,
+	zedTerminalDimWhite: `${colors.whiteAlt}99`,
 } as const;
 
 // Backwards compatibility - export primitives as alias

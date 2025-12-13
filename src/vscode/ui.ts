@@ -347,4 +347,340 @@ export const vscodeColors: Record<string, string> = {
 	"quickInputList.focusBackground": semantic.quickInputFocusBackground,
 	"quickInputList.focusForeground": semantic.quickInputFocusForeground,
 	"quickInputList.focusIconForeground": semantic.quickInputFocusIcon,
+
+	// -------------------------------------------------------------------------
+	// Sticky scroll
+	// -------------------------------------------------------------------------
+	"editorStickyScroll.background": semantic.stickyScrollBackground,
+	"editorStickyScroll.border": semantic.stickyScrollBorder,
+	"editorStickyScroll.shadow": semantic.stickyScrollShadow,
+	"editorStickyScrollHover.background": semantic.stickyScrollHover,
+
+	// -------------------------------------------------------------------------
+	// Ghost text / Copilot
+	// -------------------------------------------------------------------------
+	"editorGhostText.foreground": semantic.ghostTextForeground,
+	"editorGhostText.background": semantic.ghostTextBackground,
+	"editorGhostText.border": semantic.ghostTextBorder,
+
+	// -------------------------------------------------------------------------
+	// Inline chat & AI features
+	// -------------------------------------------------------------------------
+	"inlineChat.background": semantic.inlineChatBackground,
+	"inlineChat.border": semantic.inlineChatBorder,
+	"inlineChat.shadow": semantic.inlineChatShadow,
+	"inlineChat.regionHighlight": semantic.inlineChatRegionHighlight,
+
+	// -------------------------------------------------------------------------
+	// Command center
+	// -------------------------------------------------------------------------
+	"commandCenter.background": semantic.commandCenterBackground,
+	"commandCenter.foreground": semantic.commandCenterForeground,
+	"commandCenter.border": semantic.commandCenterBorder,
+	"commandCenter.activeForeground": semantic.commandCenterActiveForeground,
+	"commandCenter.activeBorder": semantic.commandCenterActiveBorder,
+	"commandCenter.inactiveForeground": semantic.commandCenterInactiveForeground,
+
+	// -------------------------------------------------------------------------
+	// Breadcrumbs
+	// -------------------------------------------------------------------------
+	"breadcrumb.foreground": semantic.breadcrumbForeground,
+	"breadcrumb.background": semantic.breadcrumbBackground,
+	"breadcrumb.focusForeground": semantic.breadcrumbFocusForeground,
+	"breadcrumb.activeSelectionForeground": semantic.breadcrumbActiveSelection,
+	"breadcrumbPicker.background": semantic.breadcrumbPickerBackground,
+
+	// -------------------------------------------------------------------------
+	// Menu
+	// -------------------------------------------------------------------------
+	"menu.background": semantic.menuBackground,
+	"menu.foreground": semantic.menuForeground,
+	"menu.border": semantic.menuBorder,
+	"menu.selectionBackground": semantic.menuSelectionBackground,
+	"menu.selectionForeground": semantic.menuSelectionForeground,
+	"menu.selectionBorder": semantic.menuSelectionBorder,
+	"menu.separatorBackground": semantic.menuSeparator,
+	"menubar.selectionBackground": semantic.menubarSelectionBackground,
+	"menubar.selectionForeground": semantic.menubarSelectionForeground,
+	"menubar.selectionBorder": semantic.menubarSelectionBorder,
+
+	// -------------------------------------------------------------------------
+	// Testing
+	// -------------------------------------------------------------------------
+	"testing.iconPassed": semantic.testingPassed,
+	"testing.iconFailed": semantic.testingFailed,
+	"testing.iconSkipped": semantic.testingSkipped,
+	"testing.iconErrored": semantic.testingErrored,
+	"testing.iconQueued": semantic.testingQueued,
+	"testing.iconUnset": semantic.testingUnset,
+	"testing.runAction": semantic.testingRunAction,
+	"testing.peekBorder": semantic.testingPeekBorder,
+	"testing.peekHeaderBackground": semantic.testingPeekHeaderBackground,
+	"testing.message.error.decorationForeground": semantic.testingMessageError,
+	"testing.message.error.lineBackground": semantic.testingMessageErrorBackground,
+	"testing.message.info.decorationForeground": semantic.testingMessageInfo,
+	"testing.message.info.lineBackground": semantic.testingMessageInfoBackground,
+	"testing.coveredBackground": semantic.testingCoveredBackground,
+	"testing.coveredGutterBackground": semantic.testingCoveredGutter,
+	"testing.uncoveredBackground": semantic.testingUncoveredBackground,
+	"testing.uncoveredGutterBackground": semantic.testingUncoveredGutter,
+
+	// -------------------------------------------------------------------------
+	// Merge conflicts
+	// -------------------------------------------------------------------------
+	"merge.currentHeaderBackground": semantic.mergeCurrentHeader,
+	"merge.currentContentBackground": semantic.mergeCurrentContent,
+	"merge.incomingHeaderBackground": semantic.mergeIncomingHeader,
+	"merge.incomingContentBackground": semantic.mergeIncomingContent,
+	"merge.commonHeaderBackground": semantic.mergeCommonHeader,
+	"merge.commonContentBackground": semantic.mergeCommonContent,
+	"merge.border": semantic.mergeBorder,
+	"mergeEditor.change.background": semantic.mergeEditorChangeBackground,
+	"mergeEditor.change.word.background": semantic.mergeEditorChangeWordBackground,
+	"mergeEditor.conflict.unhandledFocused.border": semantic.mergeEditorConflictFocusedBorder,
+	"mergeEditor.conflict.unhandledUnfocused.border": semantic.mergeEditorConflictUnfocusedBorder,
+
+	// -------------------------------------------------------------------------
+	// Notifications (extended)
+	// -------------------------------------------------------------------------
+	"notificationCenter.border": semantic.notificationCenterBorder,
+	"notificationCenterHeader.foreground": semantic.notificationHeaderForeground,
+	"notificationCenterHeader.background": semantic.notificationHeaderBackground,
+	"notificationToast.border": semantic.notificationToastBorder,
+	"notifications.foreground": semantic.notificationForeground,
+	"notifications.border": semantic.notificationBorder,
+	"notificationLink.foreground": semantic.notificationLinkForeground,
+	"notificationsErrorIcon.foreground": semantic.notificationErrorIcon,
+	"notificationsWarningIcon.foreground": semantic.notificationWarningIcon,
+	"notificationsInfoIcon.foreground": semantic.notificationInfoIcon,
+
+	// -------------------------------------------------------------------------
+	// Bracket colorization
+	// -------------------------------------------------------------------------
+	"editorBracketHighlight.foreground1": semantic.bracketColor1,
+	"editorBracketHighlight.foreground2": semantic.bracketColor2,
+	"editorBracketHighlight.foreground3": semantic.bracketColor3,
+	"editorBracketHighlight.foreground4": semantic.bracketColor4,
+	"editorBracketHighlight.foreground5": semantic.bracketColor5,
+	"editorBracketHighlight.foreground6": semantic.bracketColor6,
+	"editorBracketHighlight.unexpectedBracket.foreground": semantic.bracketUnexpected,
+	"editorBracketPairGuide.activeBackground1": semantic.bracketGuideActive1,
+	"editorBracketPairGuide.activeBackground2": semantic.bracketGuideActive2,
+	"editorBracketPairGuide.activeBackground3": semantic.bracketGuideActive3,
+	"editorBracketPairGuide.activeBackground4": semantic.bracketGuideActive4,
+	"editorBracketPairGuide.activeBackground5": semantic.bracketGuideActive5,
+	"editorBracketPairGuide.activeBackground6": semantic.bracketGuideActive6,
+	"editorBracketPairGuide.background1": semantic.bracketGuideInactive1,
+	"editorBracketPairGuide.background2": semantic.bracketGuideInactive2,
+	"editorBracketPairGuide.background3": semantic.bracketGuideInactive3,
+	"editorBracketPairGuide.background4": semantic.bracketGuideInactive4,
+	"editorBracketPairGuide.background5": semantic.bracketGuideInactive5,
+	"editorBracketPairGuide.background6": semantic.bracketGuideInactive6,
+
+	// -------------------------------------------------------------------------
+	// Debug tokens
+	// -------------------------------------------------------------------------
+	"debugTokenExpression.name": semantic.debugTokenName,
+	"debugTokenExpression.value": semantic.debugTokenValue,
+	"debugTokenExpression.string": semantic.debugTokenString,
+	"debugTokenExpression.boolean": semantic.debugTokenBoolean,
+	"debugTokenExpression.number": semantic.debugTokenNumber,
+	"debugTokenExpression.error": semantic.debugTokenError,
+	"debugView.exceptionLabelBackground": semantic.debugExceptionLabelBackground,
+	"debugView.exceptionLabelForeground": semantic.debugExceptionLabelForeground,
+	"debugView.stateLabelBackground": semantic.debugStateLabelBackground,
+	"debugView.stateLabelForeground": semantic.debugStateLabelForeground,
+	"debugView.valueChangedHighlight": semantic.debugValueChanged,
+	"debugIcon.breakpointForeground": semantic.debugBreakpointIcon,
+	"debugIcon.breakpointDisabledForeground": semantic.debugBreakpointDisabled,
+	"debugIcon.breakpointUnverifiedForeground": semantic.debugBreakpointUnverified,
+	"debugIcon.startForeground": semantic.debugStartIcon,
+	"debugIcon.pauseForeground": semantic.debugPauseIcon,
+	"debugIcon.stopForeground": semantic.debugStopIcon,
+	"debugIcon.disconnectForeground": semantic.debugDisconnectIcon,
+	"debugIcon.restartForeground": semantic.debugRestartIcon,
+	"debugIcon.stepOverForeground": semantic.debugStepIcon,
+	"debugIcon.stepIntoForeground": semantic.debugStepIcon,
+	"debugIcon.stepOutForeground": semantic.debugStepIcon,
+	"debugIcon.stepBackForeground": semantic.debugStepIcon,
+	"debugIcon.continueForeground": semantic.debugContinueIcon,
+	"debugConsole.infoForeground": semantic.debugConsoleInfo,
+	"debugConsole.warningForeground": semantic.debugConsoleWarning,
+	"debugConsole.errorForeground": semantic.debugConsoleError,
+	"debugConsole.sourceForeground": semantic.debugConsoleSource,
+	"debugConsoleInputIcon.foreground": semantic.debugConsoleInputIcon,
+
+	// -------------------------------------------------------------------------
+	// Terminal decorations
+	// -------------------------------------------------------------------------
+	"terminalCommandDecoration.defaultBackground": semantic.terminalDecorationDefault,
+	"terminalCommandDecoration.successBackground": semantic.terminalDecorationSuccess,
+	"terminalCommandDecoration.errorBackground": semantic.terminalDecorationError,
+	"terminal.tab.activeBorder": semantic.terminalTabActiveBorder,
+	"terminal.findMatchBackground": semantic.terminalFindMatch,
+	"terminal.findMatchBorder": semantic.terminalFindMatchBorder,
+	"terminal.findMatchHighlightBackground": semantic.terminalFindMatchHighlight,
+	"terminal.findMatchHighlightBorder": semantic.terminalFindMatchHighlightBorder,
+	"terminalOverviewRuler.cursorForeground": semantic.terminalOverviewCursor,
+	"terminalOverviewRuler.findMatchForeground": semantic.terminalOverviewFindMatch,
+	"terminalStickyScroll.background": semantic.terminalStickyScrollBackground,
+	"terminalStickyScroll.border": semantic.terminalStickyScrollBorder,
+	"terminalStickyScrollHover.background": semantic.terminalStickyScrollHover,
+
+	// -------------------------------------------------------------------------
+	// Notebook
+	// -------------------------------------------------------------------------
+	"notebook.cellBackground": semantic.notebookCellBackground,
+	"notebook.cellBorderColor": semantic.notebookCellBorder,
+	"notebook.cellStatusBarItemHoverBackground": semantic.notebookCellStatusBarHover,
+	"notebook.focusedCellBorder": semantic.notebookFocusedCellBorder,
+	"notebook.focusedEditorBorder": semantic.notebookFocusedEditorBorder,
+	"notebook.inactiveFocusedCellBorder": semantic.notebookInactiveFocusedCellBorder,
+	"notebook.selectedCellBackground": semantic.notebookSelectedCellBackground,
+	"notebook.selectedCellBorder": semantic.notebookSelectedCellBorder,
+	"notebook.cellToolbarSeparator": semantic.notebookCellToolbarSeparator,
+	"notebook.editorBackground": semantic.notebookEditorBackground,
+	"notebook.outputContainerBackgroundColor": semantic.notebookOutputBackground,
+	"notebook.outputContainerBorderColor": semantic.notebookOutputBorder,
+	"notebookScrollbarSlider.background": semantic.notebookScrollbarSlider,
+	"notebookScrollbarSlider.hoverBackground": semantic.notebookScrollbarSliderHover,
+	"notebookScrollbarSlider.activeBackground": semantic.notebookScrollbarSliderActive,
+	"notebookStatusRunningIcon.foreground": semantic.notebookRunningIcon,
+	"notebookStatusSuccessIcon.foreground": semantic.notebookSuccessIcon,
+	"notebookStatusErrorIcon.foreground": semantic.notebookErrorIcon,
+
+	// -------------------------------------------------------------------------
+	// Radio & checkbox
+	// -------------------------------------------------------------------------
+	"radio.activeBackground": semantic.radioActiveBackground,
+	"radio.activeBorder": semantic.radioActiveBorder,
+	"radio.activeForeground": semantic.radioActiveForeground,
+	"radio.inactiveBackground": semantic.radioInactiveBackground,
+	"radio.inactiveBorder": semantic.radioInactiveBorder,
+	"radio.inactiveForeground": semantic.radioInactiveForeground,
+	"radio.inactiveHoverBackground": semantic.radioInactiveHoverBackground,
+	"checkbox.border": semantic.checkboxBorder,
+	"checkbox.selectBackground": semantic.checkboxSelectBackground,
+	"checkbox.selectBorder": semantic.checkboxSelectBorder,
+
+	// -------------------------------------------------------------------------
+	// Git decorations (extensions)
+	// -------------------------------------------------------------------------
+	"gitDecoration.renamedResourceForeground": semantic.gitRenamed,
+	"gitDecoration.copiedResourceForeground": semantic.gitCopied,
+
+	// -------------------------------------------------------------------------
+	// Keybinding labels
+	// -------------------------------------------------------------------------
+	"keybindingLabel.background": semantic.keybindingBackground,
+	"keybindingLabel.foreground": semantic.keybindingForeground,
+	"keybindingLabel.border": semantic.keybindingBorder,
+	"keybindingLabel.bottomBorder": semantic.keybindingBottomBorder,
+
+	// -------------------------------------------------------------------------
+	// Banner
+	// -------------------------------------------------------------------------
+	"banner.background": semantic.bannerBackground,
+	"banner.foreground": semantic.bannerForeground,
+	"banner.iconForeground": semantic.bannerIconForeground,
+
+	// -------------------------------------------------------------------------
+	// Welcome page
+	// -------------------------------------------------------------------------
+	"welcomePage.background": semantic.welcomePageBackground,
+	"welcomePage.tileBackground": semantic.welcomePageTileBackground,
+	"welcomePage.tileHoverBackground": semantic.welcomePageTileHoverBackground,
+	"welcomePage.tileBorder": semantic.welcomePageTileBorder,
+	"welcomePage.progress.background": semantic.welcomePageProgressBackground,
+	"welcomePage.progress.foreground": semantic.welcomePageProgressForeground,
+
+	// -------------------------------------------------------------------------
+	// Walkthrough
+	// -------------------------------------------------------------------------
+	"walkthrough.stepTitle.foreground": semantic.walkthroughStepTitle,
+
+	// -------------------------------------------------------------------------
+	// Search editor
+	// -------------------------------------------------------------------------
+	"searchEditor.findMatchBackground": semantic.searchEditorFindMatch,
+	"searchEditor.findMatchBorder": semantic.searchEditorFindMatchBorder,
+	"searchEditor.textInputBorder": semantic.searchEditorTextInputBorder,
+
+	// -------------------------------------------------------------------------
+	// Symbol icons
+	// -------------------------------------------------------------------------
+	"symbolIcon.arrayForeground": semantic.symbolIconArray,
+	"symbolIcon.booleanForeground": semantic.symbolIconBoolean,
+	"symbolIcon.classForeground": semantic.symbolIconClass,
+	"symbolIcon.colorForeground": semantic.symbolIconColor,
+	"symbolIcon.constantForeground": semantic.symbolIconConstant,
+	"symbolIcon.constructorForeground": semantic.symbolIconConstructor,
+	"symbolIcon.enumeratorForeground": semantic.symbolIconEnumerator,
+	"symbolIcon.enumeratorMemberForeground": semantic.symbolIconEnumeratorMember,
+	"symbolIcon.eventForeground": semantic.symbolIconEvent,
+	"symbolIcon.fieldForeground": semantic.symbolIconField,
+	"symbolIcon.fileForeground": semantic.symbolIconFile,
+	"symbolIcon.folderForeground": semantic.symbolIconFolder,
+	"symbolIcon.functionForeground": semantic.symbolIconFunction,
+	"symbolIcon.interfaceForeground": semantic.symbolIconInterface,
+	"symbolIcon.keyForeground": semantic.symbolIconKey,
+	"symbolIcon.keywordForeground": semantic.symbolIconKeyword,
+	"symbolIcon.methodForeground": semantic.symbolIconMethod,
+	"symbolIcon.moduleForeground": semantic.symbolIconModule,
+	"symbolIcon.namespaceForeground": semantic.symbolIconNamespace,
+	"symbolIcon.nullForeground": semantic.symbolIconNull,
+	"symbolIcon.numberForeground": semantic.symbolIconNumber,
+	"symbolIcon.objectForeground": semantic.symbolIconObject,
+	"symbolIcon.operatorForeground": semantic.symbolIconOperator,
+	"symbolIcon.packageForeground": semantic.symbolIconPackage,
+	"symbolIcon.propertyForeground": semantic.symbolIconProperty,
+	"symbolIcon.referenceForeground": semantic.symbolIconReference,
+	"symbolIcon.snippetForeground": semantic.symbolIconSnippet,
+	"symbolIcon.stringForeground": semantic.symbolIconString,
+	"symbolIcon.structForeground": semantic.symbolIconStruct,
+	"symbolIcon.textForeground": semantic.symbolIconText,
+	"symbolIcon.typeParameterForeground": semantic.symbolIconTypeParameter,
+	"symbolIcon.unitForeground": semantic.symbolIconUnit,
+	"symbolIcon.variableForeground": semantic.symbolIconVariable,
+
+	// -------------------------------------------------------------------------
+	// Charts
+	// -------------------------------------------------------------------------
+	"charts.foreground": semantic.chartsForeground,
+	"charts.lines": semantic.chartsLines,
+	"charts.red": semantic.chartsRed,
+	"charts.blue": semantic.chartsBlue,
+	"charts.yellow": semantic.chartsYellow,
+	"charts.orange": semantic.chartsOrange,
+	"charts.green": semantic.chartsGreen,
+	"charts.purple": semantic.chartsPurple,
+
+	// -------------------------------------------------------------------------
+	// Ports
+	// -------------------------------------------------------------------------
+	"ports.iconRunningProcessForeground": semantic.portsRunningProcess,
+
+	// -------------------------------------------------------------------------
+	// Comments view
+	// -------------------------------------------------------------------------
+	"commentsView.resolvedIcon": semantic.commentsResolvedIcon,
+	"commentsView.unresolvedIcon": semantic.commentsUnresolvedIcon,
+
+	// -------------------------------------------------------------------------
+	// Action bar
+	// -------------------------------------------------------------------------
+	"actionBar.toggledBackground": semantic.actionBarToggled,
+
+	// -------------------------------------------------------------------------
+	// Simple find widget
+	// -------------------------------------------------------------------------
+	"simpleFindWidget.sashBorder": semantic.simpleFindWidgetBorder,
+
+	// -------------------------------------------------------------------------
+	// SCM
+	// -------------------------------------------------------------------------
+	"scm.historyItemAdditionsForeground": semantic.scmHistoryAdditions,
+	"scm.historyItemDeletionsForeground": semantic.scmHistoryDeletions,
+	"scm.historyItemStatisticsBorder": semantic.scmHistoryStatisticsBorder,
+	"scm.historyItemSelectedStatisticsBorder": semantic.scmHistorySelectedStatisticsBorder,
 };
