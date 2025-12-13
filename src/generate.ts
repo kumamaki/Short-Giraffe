@@ -1,72 +1,78 @@
 /**
  * Theme Generator
  * Generates VS Code and Zed themes from the shared palette
+ * Supports multiple theme variants from a single source
  */
 
 import { writeFileSync } from "node:fs";
-import { vscodeColors } from "./vscode/ui";
-import { vscodeTokenColors } from "./vscode/tokenColors";
-import { vscodeSemanticTokenColors } from "./vscode/semantic";
-import { zedStyle, zedPlayers } from "./zed/style";
-import { zedSyntax } from "./zed/syntax";
+import { createVscodeColors } from "./vscode/ui";
+import { createTokenColors } from "./vscode/tokenColors";
+import { createSemanticTokenColors } from "./vscode/semantic";
+import { createZedStyle, createZedPlayers } from "./zed/style";
+import { createZedSyntax } from "./zed/syntax";
+import { variants, mergeVariant, getFileSuffix } from "./variants";
 import type { VSCodeTheme, ZedTheme, ZedStyle } from "./types";
 
 // =============================================================================
 // VS Code Theme Generation
 // =============================================================================
 
-function generateVSCodeTheme(): void {
-	const theme: VSCodeTheme = {
-		name: "Short Giraffe",
-		type: "dark",
-		colors: vscodeColors,
-		tokenColors: vscodeTokenColors,
-		semanticHighlighting: true,
-		semanticTokenColors: vscodeSemanticTokenColors,
-	};
+function generateVSCodeThemes(): void {
+	for (const variant of variants) {
+		const semantic = mergeVariant(variant);
+		const suffix = getFileSuffix(variant);
 
-	// Write with 3-space indentation to match original format
-	writeFileSync(
-		"./vscode/theme.json",
-		JSON.stringify(theme, null, 3) + "\n"
-	);
+		const theme: VSCodeTheme = {
+			name: variant.name,
+			type: "dark",
+			colors: createVscodeColors(semantic),
+			tokenColors: createTokenColors(semantic),
+			semanticHighlighting: true,
+			semanticTokenColors: createSemanticTokenColors(semantic),
+		};
 
-	console.log("✓ Generated: vscode/theme.json");
+		const filename = `./vscode/theme${suffix}.json`;
+		writeFileSync(filename, JSON.stringify(theme, null, 3) + "\n");
+
+		console.log(`✓ Generated: ${filename}`);
+	}
 }
 
 // =============================================================================
 // Zed Theme Generation
 // =============================================================================
 
-function generateZedTheme(): void {
-	// Build style object with players and syntax embedded
-	const style: ZedStyle = {
-		...zedStyle,
-		players: zedPlayers,
-		syntax: zedSyntax,
-	};
+function generateZedThemes(): void {
+	for (const variant of variants) {
+		const semantic = mergeVariant(variant);
+		const suffix = getFileSuffix(variant);
 
-	const theme: ZedTheme = {
-		$schema: "https://zed.dev/schema/themes/v0.1.0.json",
-		name: "Short Giraffe",
-		author: "kumamaki <8641684+kumamaki@users.noreply.github.com>",
-		type: "dark",
-		themes: [
-			{
-				name: "Short Giraffe",
-				appearance: "dark",
-				style,
-			},
-		],
-	};
+		// Build style object with players and syntax embedded
+		const style: ZedStyle = {
+			...createZedStyle(semantic),
+			players: createZedPlayers(semantic),
+			syntax: createZedSyntax(semantic),
+		};
 
-	// Write with tab indentation to match original format
-	writeFileSync(
-		"./themes/zed.json",
-		JSON.stringify(theme, null, "\t") + "\n"
-	);
+		const theme: ZedTheme = {
+			$schema: "https://zed.dev/schema/themes/v0.1.0.json",
+			name: variant.name,
+			author: "kumamaki <8641684+kumamaki@users.noreply.github.com>",
+			type: "dark",
+			themes: [
+				{
+					name: variant.name,
+					appearance: "dark",
+					style,
+				},
+			],
+		};
 
-	console.log("✓ Generated: themes/zed.json");
+		const filename = `./themes/zed${suffix}.json`;
+		writeFileSync(filename, JSON.stringify(theme, null, "\t") + "\n");
+
+		console.log(`✓ Generated: ${filename}`);
+	}
 }
 
 // =============================================================================
@@ -74,8 +80,9 @@ function generateZedTheme(): void {
 // =============================================================================
 
 console.log("\n🦒 Short Giraffe Theme Generator\n");
+console.log(`Generating ${variants.length} theme variant(s)...\n`);
 
-generateVSCodeTheme();
-generateZedTheme();
+generateVSCodeThemes();
+generateZedThemes();
 
 console.log("\n✨ Done!\n");

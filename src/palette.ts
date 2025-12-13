@@ -55,15 +55,15 @@ export const colors = {
 	gray25: "#cbccc6",
 
 	// -------------------------------------------------------------------------
-	// Corals / Oranges (primary accent hue)
+	// Oranges (primary accent hue)
 	// -------------------------------------------------------------------------
-	coral700: "#C98B83",
-	coral600: "#E1936C",
-	coral500: "#F29E74",
-	coral400: "#FFB69E",
-	coral300: "#FFB46A",
-	coral200: "#F7C0A5",
-	coral100: "#FFB480",
+	orange700: "#C98B83",
+	orange600: "#E1936C",
+	orange500: "#F29E74",
+	orange400: "#FFB69E",
+	orange300: "#FFB46A",
+	orange200: "#F7C0A5",
+	orange100: "#FFB480",
 
 	// -------------------------------------------------------------------------
 	// Yellows
@@ -162,11 +162,6 @@ export const colors = {
 	olive300: "#dec184ff",
 
 	// -------------------------------------------------------------------------
-	// Orange (misc)
-	// -------------------------------------------------------------------------
-	orange400: "#E6BB8D",
-
-	// -------------------------------------------------------------------------
 	// Special
 	// -------------------------------------------------------------------------
 	transparent: "#FFFFFF00",
@@ -199,7 +194,7 @@ export const semantic = {
 	editorSelectionHighlight: colors.gray575,
 	editorSelectionHighlightBorder: colors.gray425,
 	editorWordHighlight: colors.gray525,
-	editorCursor: colors.coral500,
+	editorCursor: colors.orange500,
 	editorLineNumber: colors.gray300,
 	editorLineNumberActive: colors.gray100,
 	editorWhitespace: `${colors.gray175}66`,
@@ -213,12 +208,12 @@ export const semantic = {
 	editorInlayHint: `${colors.blue300}BB`,
 	editorInlayHintBg: colors.transparent,
 	editorLink: colors.cyan500,
-	editorFindMatch: `${colors.coral500}0d`,
-	editorFindMatchBorder: colors.coral500,
-	editorFindMatchHighlight: `${colors.coral500}0d`,
-	editorFindMatchHighlightBorder: `${colors.coral500}59`,
+	editorFindMatch: `${colors.orange500}0d`,
+	editorFindMatchBorder: colors.orange500,
+	editorFindMatchHighlight: `${colors.orange500}0d`,
+	editorFindMatchHighlightBorder: `${colors.orange500}59`,
 	editorFindRange: colors.gray525,
-	editorWordHighlightStrong: `${colors.coral500}33`,
+	editorWordHighlightStrong: `${colors.orange500}33`,
 
 	// =========================================================================
 	// EDITOR WIDGETS
@@ -235,7 +230,7 @@ export const semantic = {
 	// EDITOR GUTTER
 	// =========================================================================
 	gutterBackground: colors.gray725,
-	gutterModified: colors.coral700,
+	gutterModified: colors.orange700,
 	gutterAdded: `${colors.green500}99`,
 	gutterDeleted: colors.red300,
 
@@ -247,7 +242,7 @@ export const semantic = {
 	overviewRulerAdded: `${colors.green500}99`,
 	overviewRulerDeleted: colors.red300,
 	overviewRulerError: colors.red200,
-	overviewRulerWarning: colors.coral500,
+	overviewRulerWarning: colors.orange500,
 
 	// =========================================================================
 	// DIFF EDITOR
@@ -261,21 +256,21 @@ export const semantic = {
 	sidebarBackground: colors.gray750,
 	sidebarForeground: colors.gray50,
 	sidebarBorder: colors.gray900,
-	sidebarTitle: colors.coral400,
-	sidebarSectionHeader: colors.coral400,
+	sidebarTitle: colors.orange400,
+	sidebarSectionHeader: colors.orange400,
 	activityBarBackground: colors.gray900,
-	activityBarForeground: colors.coral500,
+	activityBarForeground: colors.orange500,
 	activityBarBorder: colors.gray900,
 	activityBarInactive: colors.gray300,
-	activityBarBadge: colors.coral500,
+	activityBarBadge: colors.orange500,
 	activityBarBadgeForeground: colors.gray725,
 
 	// =========================================================================
 	// TABS
 	// =========================================================================
 	tabActiveBackground: colors.gray575,
-	tabActiveForeground: colors.coral500,
-	tabActiveBorderTop: colors.coral500,
+	tabActiveForeground: colors.orange500,
+	tabActiveBorderTop: colors.orange500,
 	tabInactiveBackground: colors.gray725,
 	tabInactiveForeground: colors.gray175,
 	tabBorder: colors.gray725,
@@ -288,15 +283,15 @@ export const semantic = {
 	// =========================================================================
 	// STATUS BAR
 	// =========================================================================
-	statusBarBackground: colors.coral400,
+	statusBarBackground: colors.orange400,
 	statusBarForeground: colors.gray800,
 	statusBarBorder: colors.gray700,
-	statusBarDebuggingBackground: colors.coral500,
+	statusBarDebuggingBackground: colors.orange500,
 	statusBarDebuggingForeground: colors.gray725,
 	statusBarNoFolder: colors.gray550,
 	statusBarItemActive: colors.black50,
-	statusBarItemHover: colors.coral600,
-	statusBarItemProminent: colors.coral500,
+	statusBarItemHover: colors.orange600,
+	statusBarItemProminent: colors.orange500,
 	statusBarItemProminentHover: colors.black30,
 
 	// =========================================================================
@@ -311,11 +306,11 @@ export const semantic = {
 	// =========================================================================
 	// BUTTONS & INPUTS
 	// =========================================================================
-	buttonBackground: colors.gray300,
-	buttonBorder: colors.gray300,
+	buttonBackground: colors.gray400,
+	buttonBorder: colors.gray400,
 	buttonForeground: colors.cream200,
-	buttonHover: colors.gray250,
-	buttonSecondary: colors.gray400,
+	buttonHover: colors.gray350,
+	buttonSecondary: colors.gray475,
 	buttonSecondaryForeground: colors.gray50,
 	checkboxBackground: colors.gray725,
 	checkboxForeground: colors.cream200,
@@ -323,7 +318,7 @@ export const semantic = {
 	inputBorder: colors.gray300,
 	inputForeground: colors.gray100,
 	inputPlaceholder: colors.gray225,
-	inputOptionActive: colors.coral500,
+	inputOptionActive: colors.orange500,
 	inputValidationError: colors.gray725,
 	inputValidationErrorBorder: colors.red200,
 	inputValidationInfo: colors.gray725,
@@ -340,10 +335,10 @@ export const semantic = {
 	listActiveSelection: colors.gray575,
 	listActiveSelectionForeground: colors.cream300,
 	listFocusBackground: colors.gray650,
-	listFocusForeground: colors.coral500,
-	listHighlight: colors.coral500,
+	listFocusForeground: colors.orange500,
+	listHighlight: colors.orange500,
 	listHoverBackground: colors.gray650,
-	listHoverForeground: colors.coral300,
+	listHoverForeground: colors.orange300,
 	listInactiveSelection: colors.gray650,
 	listInactiveSelectionForeground: colors.cream100,
 	listInvalidItem: colors.gray225,
@@ -366,9 +361,9 @@ export const semantic = {
 	// =========================================================================
 	// BADGES
 	// =========================================================================
-	badgeBackground: colors.coral500,
+	badgeBackground: colors.orange500,
 	badgeForeground: colors.gray725,
-	progressBar: colors.coral500,
+	progressBar: colors.orange500,
 
 	// =========================================================================
 	// PANELS
@@ -389,7 +384,7 @@ export const semantic = {
 	// =========================================================================
 	peekViewBorder: colors.gray700,
 	peekViewBackground: colors.gray550,
-	peekViewMatchHighlight: `${colors.coral500}33`,
+	peekViewMatchHighlight: `${colors.orange500}33`,
 	peekViewResult: colors.gray550,
 	peekViewResultFile: colors.gray175,
 	peekViewTitle: colors.gray550,
@@ -407,15 +402,16 @@ export const semantic = {
 	// EXTENSIONS
 	// =========================================================================
 	extensionButtonForeground: colors.gray725,
-	extensionButtonBackground: colors.coral500,
-	extensionButtonHover: "#fac761",
+	extensionButtonBackground: colors.orange400,
+	extensionButtonHover: colors.orange300,
+	extensionButtonSeparator: colors.gray600,
 
 	// =========================================================================
 	// QUICK INPUT
 	// =========================================================================
 	quickInputBackground: colors.gray575,
 	quickInputFocusBackground: colors.gray575,
-	quickInputFocusForeground: colors.coral600,
+	quickInputFocusForeground: colors.orange600,
 	quickInputFocusIcon: colors.cyan500,
 	pickerGroupBorder: colors.gray100,
 	pickerGroupForeground: colors.gray100,
@@ -435,7 +431,7 @@ export const semantic = {
 	textPreformat: colors.blue350,
 	foreground: colors.cream200,
 	focusBorder: colors.gray275,
-	sashHover: colors.coral500,
+	sashHover: colors.orange500,
 	iconForeground: colors.gray50,
 	selectionBackground: `${colors.gray500}fd`,
 
@@ -444,7 +440,7 @@ export const semantic = {
 	// =========================================================================
 	errorForeground: colors.red600,
 	errorBright: colors.red500,
-	warningForeground: colors.coral600,
+	warningForeground: colors.orange600,
 	infoForeground: colors.gray300,
 
 	// =========================================================================
@@ -488,7 +484,7 @@ export const semantic = {
 	syntaxKeyword: colors.yellow500,
 	syntaxKeywordItalic: colors.yellow500,
 	syntaxOperator: colors.yellow400,
-	syntaxBuiltinObject: colors.coral300,
+	syntaxBuiltinObject: colors.orange300,
 	syntaxType: colors.blue300,
 	syntaxFunction: colors.cyan500,
 	syntaxVariable: colors.blue500,
@@ -497,7 +493,7 @@ export const semantic = {
 	syntaxSuper: colors.cyan500,
 	syntaxProperty: colors.cream500,
 	syntaxString: colors.pink500,
-	syntaxNumber: colors.coral200,
+	syntaxNumber: colors.orange200,
 	syntaxComment: colors.gray300,
 	syntaxVueProp: colors.purple500,
 	syntaxTag: colors.yellow300,
@@ -509,7 +505,7 @@ export const semantic = {
 	syntaxCSSPunctuation: colors.cream200,
 	syntaxCSSVariable: colors.blue400,
 	syntaxCSSFunction: colors.cyan500,
-	syntaxCSSConstant: colors.coral100,
+	syntaxCSSConstant: colors.orange100,
 	syntaxCSSColor: colors.yellow400,
 	syntaxJSONKey: colors.yellow400,
 	syntaxJSONString: colors.pink500,
@@ -530,44 +526,44 @@ export const semantic = {
 	semanticInterface: colors.purple400,
 	semanticClass: colors.purple400,
 	semanticTypeDeclaration: colors.blue300,
-	semanticEnum: colors.coral100,
+	semanticEnum: colors.orange100,
 	semanticEnumMember: colors.pink500,
 
 	// =========================================================================
 	// ZED-SPECIFIC
 	// =========================================================================
-	zedBackground: colors.gray850,
-	zedSurface: colors.gray950,
+	zedBackground: colors.gray750,
+	zedSurface: colors.gray900,
 	zedBorder: colors.gray675,
-	zedBorderFocused: colors.coral400,
-	zedPanel: colors.gray925,
-	zedStatusBar: colors.gray825,
+	zedBorderFocused: colors.orange400,
+	zedPanel: colors.gray750,
+	zedStatusBar: colors.gray750,
 	zedText: colors.cream150,
 	zedTextMuted: colors.gray75,
 	zedTextDisabled: colors.gray250,
-	zedTextAccent: colors.coral400,
-	zedEditorBackground: colors.gray825,
+	zedTextAccent: colors.orange400,
+	zedEditorBackground: colors.gray725,
 	zedEditorForeground: colors.cream150,
 	zedEditorLineNumber: colors.gray400,
 	zedEditorIndentGuide: `${colors.white}10`,
 	zedEditorActiveLine: colors.gray675,
 	zedEditorHighlightedLine: colors.gray600,
-	zedEditorGutter: colors.gray825,
-	zedElevatedSurface: colors.gray950,
+	zedEditorGutter: colors.gray725,
+	zedElevatedSurface: colors.gray900,
 	zedElement: colors.gray675,
 	zedElementHover: colors.gray600,
 	zedGhostElementHover: colors.gray675,
 	zedTabActive: colors.gray675,
-	zedTabInactive: colors.gray850,
-	zedTabBar: colors.gray825,
-	zedTitleBar: colors.gray950,
-	zedToolbar: colors.gray825,
+	zedTabInactive: colors.gray800,
+	zedTabBar: colors.gray750,
+	zedTitleBar: colors.gray750,
+	zedToolbar: colors.gray750,
 	zedPredictive: colors.gray75,
 	zedCreated: colors.cyan500,
 	zedDeleted: colors.pink500,
 	zedConflict: colors.pink500,
 	zedIgnored: colors.gray250,
-	zedModified: colors.coral400,
+	zedModified: colors.orange400,
 	zedWarningBg: colors.olive500,
 	zedErrorBg: colors.red800,
 	zedHint: colors.gray250,
@@ -632,14 +628,14 @@ export const semantic = {
 	inlineChatBackground: colors.gray550,
 	inlineChatBorder: colors.gray700,
 	inlineChatShadow: colors.gray775,
-	inlineChatRegionHighlight: `${colors.coral500}15`,
-	inlineChatSendButtonBackground: colors.coral500,
+	inlineChatRegionHighlight: `${colors.orange500}15`,
+	inlineChatSendButtonBackground: colors.orange500,
 	inlineChatSendButtonForeground: colors.gray725,
-	inlineChatSendButtonHover: colors.coral600,
+	inlineChatSendButtonHover: colors.orange600,
 	inlineChatRequestBorder: colors.gray700,
-	inlineEditGutterPrimaryBorder: colors.coral500,
-	inlineEditGutterPrimaryForeground: colors.coral500,
-	inlineEditGutterPrimaryBackground: `${colors.coral500}20`,
+	inlineEditGutterPrimaryBorder: colors.orange500,
+	inlineEditGutterPrimaryForeground: colors.orange500,
+	inlineEditGutterPrimaryBackground: `${colors.orange500}20`,
 	inlineEditGutterSecondaryBorder: colors.gray300,
 	inlineEditGutterSecondaryForeground: colors.gray300,
 	inlineEditGutterSecondaryBackground: `${colors.gray300}20`,
@@ -662,15 +658,15 @@ export const semantic = {
 	commandCenterBorder: colors.gray700,
 	commandCenterInactiveForeground: colors.gray175,
 	commandCenterInactiveBorder: colors.gray700,
-	commandCenterActiveForeground: colors.coral500,
-	commandCenterActiveBorder: colors.coral500,
+	commandCenterActiveForeground: colors.orange500,
+	commandCenterActiveBorder: colors.orange500,
 
 	// =========================================================================
 	// BREADCRUMBS (VS Code)
 	// =========================================================================
 	breadcrumbForeground: colors.gray175,
 	breadcrumbBackground: colors.gray725,
-	breadcrumbFocusForeground: colors.coral500,
+	breadcrumbFocusForeground: colors.orange500,
 	breadcrumbActiveSelection: colors.cream200,
 	breadcrumbPickerBackground: colors.gray575,
 
@@ -681,11 +677,11 @@ export const semantic = {
 	menuForeground: colors.cream200,
 	menuBorder: colors.gray700,
 	menuSelectionBackground: colors.gray650,
-	menuSelectionForeground: colors.coral500,
+	menuSelectionForeground: colors.orange500,
 	menuSelectionBorder: colors.transparent,
 	menuSeparator: colors.gray450,
 	menubarSelectionBackground: colors.gray650,
-	menubarSelectionForeground: colors.coral500,
+	menubarSelectionForeground: colors.orange500,
 	menubarSelectionBorder: colors.transparent,
 
 	// =========================================================================
@@ -702,7 +698,7 @@ export const semantic = {
 	testingCoveredGutter: colors.green500,
 	testingUncoveredGutter: colors.red500,
 	testingRunAction: colors.green500,
-	testingPeekBorder: colors.coral500,
+	testingPeekBorder: colors.orange500,
 	testingPeekHeaderBackground: colors.gray550,
 	testingMessageError: colors.red500,
 	testingMessageErrorBackground: `${colors.red500}15`,
@@ -719,9 +715,9 @@ export const semantic = {
 	mergeCommonHeader: `${colors.gray300}40`,
 	mergeCommonContent: `${colors.gray300}20`,
 	mergeBorder: colors.gray700,
-	mergeEditorChangeBackground: `${colors.coral500}20`,
-	mergeEditorChangeWordBackground: `${colors.coral500}40`,
-	mergeEditorConflictFocusedBorder: colors.coral500,
+	mergeEditorChangeBackground: `${colors.orange500}20`,
+	mergeEditorChangeWordBackground: `${colors.orange500}40`,
+	mergeEditorConflictFocusedBorder: colors.orange500,
 	mergeEditorConflictUnfocusedBorder: colors.gray300,
 
 	// =========================================================================
@@ -734,27 +730,27 @@ export const semantic = {
 	notificationForeground: colors.cream200,
 	notificationBorder: colors.gray700,
 	notificationErrorIcon: colors.red500,
-	notificationWarningIcon: colors.coral500,
+	notificationWarningIcon: colors.orange500,
 	notificationInfoIcon: colors.cyan500,
 	notificationLinkForeground: colors.cyan500,
 
 	// =========================================================================
 	// BRACKET COLORIZATION (VS Code)
 	// =========================================================================
-	bracketColor1: colors.coral500,
+	bracketColor1: colors.orange500,
 	bracketColor2: colors.yellow500,
 	bracketColor3: colors.cyan500,
 	bracketColor4: colors.purple400,
 	bracketColor5: colors.blue400,
 	bracketColor6: colors.green500,
 	bracketUnexpected: colors.red500,
-	bracketGuideActive1: `${colors.coral500}80`,
+	bracketGuideActive1: `${colors.orange500}80`,
 	bracketGuideActive2: `${colors.yellow500}80`,
 	bracketGuideActive3: `${colors.cyan500}80`,
 	bracketGuideActive4: `${colors.purple400}80`,
 	bracketGuideActive5: `${colors.blue400}80`,
 	bracketGuideActive6: `${colors.green500}80`,
-	bracketGuideInactive1: `${colors.coral500}40`,
+	bracketGuideInactive1: `${colors.orange500}40`,
 	bracketGuideInactive2: `${colors.yellow500}40`,
 	bracketGuideInactive3: `${colors.cyan500}40`,
 	bracketGuideInactive4: `${colors.purple400}40`,
@@ -768,9 +764,9 @@ export const semantic = {
 	debugTokenValue: colors.cream300,
 	debugTokenString: colors.pink500,
 	debugTokenBoolean: colors.yellow500,
-	debugTokenNumber: colors.coral200,
+	debugTokenNumber: colors.orange200,
 	debugTokenError: colors.red500,
-	debugValueChanged: colors.coral500,
+	debugValueChanged: colors.orange500,
 	debugExceptionLabelForeground: colors.cream200,
 	debugExceptionLabelBackground: colors.red800,
 	debugStateLabelForeground: colors.cream200,
@@ -786,10 +782,10 @@ export const semantic = {
 	debugStepIcon: colors.cyan500,
 	debugContinueIcon: colors.green500,
 	debugConsoleInfo: colors.cyan500,
-	debugConsoleWarning: colors.coral500,
+	debugConsoleWarning: colors.orange500,
 	debugConsoleError: colors.red500,
 	debugConsoleSource: colors.gray175,
-	debugConsoleInputIcon: colors.coral500,
+	debugConsoleInputIcon: colors.orange500,
 
 	// =========================================================================
 	// TERMINAL DECORATIONS (VS Code)
@@ -797,16 +793,16 @@ export const semantic = {
 	terminalDecorationDefault: colors.gray300,
 	terminalDecorationSuccess: `${colors.green500}30`,
 	terminalDecorationError: `${colors.red500}30`,
-	terminalTabActiveBorder: colors.coral500,
+	terminalTabActiveBorder: colors.orange500,
 	terminalStickyScrollBackground: colors.gray725,
 	terminalStickyScrollBorder: colors.gray700,
 	terminalStickyScrollHover: colors.gray650,
-	terminalFindMatch: `${colors.coral500}30`,
-	terminalFindMatchBorder: colors.coral500,
-	terminalFindMatchHighlight: `${colors.coral500}20`,
-	terminalFindMatchHighlightBorder: `${colors.coral500}50`,
+	terminalFindMatch: `${colors.orange500}30`,
+	terminalFindMatchBorder: colors.orange500,
+	terminalFindMatchHighlight: `${colors.orange500}20`,
+	terminalFindMatchHighlightBorder: `${colors.orange500}50`,
 	terminalOverviewCursor: colors.gray100,
-	terminalOverviewFindMatch: colors.coral500,
+	terminalOverviewFindMatch: colors.orange500,
 
 	// =========================================================================
 	// NOTEBOOK (VS Code)
@@ -815,8 +811,8 @@ export const semantic = {
 	notebookCellBorder: colors.gray700,
 	notebookCellStatusBarHover: colors.gray650,
 	notebookCellToolbarSeparator: colors.gray450,
-	notebookFocusedCellBorder: colors.coral500,
-	notebookFocusedEditorBorder: colors.coral500,
+	notebookFocusedCellBorder: colors.orange500,
+	notebookFocusedEditorBorder: colors.orange500,
 	notebookSelectedCellBackground: colors.gray650,
 	notebookSelectedCellBorder: colors.gray575,
 	notebookInactiveFocusedCellBorder: colors.gray450,
@@ -825,7 +821,7 @@ export const semantic = {
 	notebookScrollbarSlider: colors.black30,
 	notebookScrollbarSliderHover: colors.black40,
 	notebookScrollbarSliderActive: colors.black50,
-	notebookRunningIcon: colors.coral500,
+	notebookRunningIcon: colors.orange500,
 	notebookSuccessIcon: colors.green500,
 	notebookErrorIcon: colors.red500,
 	notebookEditorBackground: colors.gray725,
@@ -833,16 +829,16 @@ export const semantic = {
 	// =========================================================================
 	// RADIO & CHECKBOX (VS Code)
 	// =========================================================================
-	radioActiveBackground: colors.coral500,
-	radioActiveBorder: colors.coral500,
+	radioActiveBackground: colors.orange500,
+	radioActiveBorder: colors.orange500,
 	radioActiveForeground: colors.gray725,
 	radioInactiveBackground: colors.gray725,
 	radioInactiveBorder: colors.gray300,
 	radioInactiveForeground: colors.cream200,
 	radioInactiveHoverBackground: colors.gray650,
 	checkboxBorder: colors.gray300,
-	checkboxSelectBackground: colors.coral500,
-	checkboxSelectBorder: colors.coral500,
+	checkboxSelectBackground: colors.orange500,
+	checkboxSelectBorder: colors.orange500,
 
 	// =========================================================================
 	// GIT DECORATION EXTENSIONS (VS Code)
@@ -863,7 +859,7 @@ export const semantic = {
 	// =========================================================================
 	bannerBackground: colors.gray550,
 	bannerForeground: colors.cream200,
-	bannerIconForeground: colors.coral500,
+	bannerIconForeground: colors.orange500,
 
 	// =========================================================================
 	// WELCOME PAGE (VS Code)
@@ -873,32 +869,32 @@ export const semantic = {
 	welcomePageTileHoverBackground: colors.gray575,
 	welcomePageTileBorder: colors.gray700,
 	welcomePageProgressBackground: colors.gray700,
-	welcomePageProgressForeground: colors.coral500,
+	welcomePageProgressForeground: colors.orange500,
 
 	// =========================================================================
 	// WALKTHROUGH (VS Code)
 	// =========================================================================
-	walkthroughStepTitle: colors.coral500,
+	walkthroughStepTitle: colors.orange500,
 
 	// =========================================================================
 	// SEARCH EDITOR (VS Code)
 	// =========================================================================
-	searchEditorFindMatch: `${colors.coral500}30`,
-	searchEditorFindMatchBorder: colors.coral500,
+	searchEditorFindMatch: `${colors.orange500}30`,
+	searchEditorFindMatchBorder: colors.orange500,
 	searchEditorTextInputBorder: colors.gray300,
 
 	// =========================================================================
 	// SYMBOL ICONS (VS Code)
 	// =========================================================================
-	symbolIconArray: colors.coral500,
+	symbolIconArray: colors.orange500,
 	symbolIconBoolean: colors.yellow500,
 	symbolIconClass: colors.purple400,
-	symbolIconColor: colors.coral500,
+	symbolIconColor: colors.orange500,
 	symbolIconConstant: colors.yellow500,
 	symbolIconConstructor: colors.cyan500,
-	symbolIconEnumerator: colors.coral100,
+	symbolIconEnumerator: colors.orange100,
 	symbolIconEnumeratorMember: colors.pink500,
-	symbolIconEvent: colors.coral500,
+	symbolIconEvent: colors.orange500,
 	symbolIconField: colors.blue400,
 	symbolIconFile: colors.gray175,
 	symbolIconFolder: colors.gray175,
@@ -910,8 +906,8 @@ export const semantic = {
 	symbolIconModule: colors.gray175,
 	symbolIconNamespace: colors.purple400,
 	symbolIconNull: colors.gray175,
-	symbolIconNumber: colors.coral200,
-	symbolIconObject: colors.coral500,
+	symbolIconNumber: colors.orange200,
+	symbolIconObject: colors.orange500,
 	symbolIconOperator: colors.yellow400,
 	symbolIconPackage: colors.gray175,
 	symbolIconProperty: colors.cream500,
@@ -928,7 +924,7 @@ export const semantic = {
 	// CHARTS (VS Code)
 	// =========================================================================
 	chartsRed: colors.red500,
-	chartsOrange: colors.coral500,
+	chartsOrange: colors.orange500,
 	chartsYellow: colors.yellow500,
 	chartsGreen: colors.green500,
 	chartsBlue: colors.blue400,
@@ -945,7 +941,7 @@ export const semantic = {
 	// COMMENTS VIEW (VS Code)
 	// =========================================================================
 	commentsResolvedIcon: colors.gray300,
-	commentsUnresolvedIcon: colors.coral500,
+	commentsUnresolvedIcon: colors.orange500,
 
 	// =========================================================================
 	// ACTION BAR (VS Code)
@@ -963,7 +959,7 @@ export const semantic = {
 	scmHistoryAdditions: colors.green500,
 	scmHistoryDeletions: colors.red500,
 	scmHistoryStatisticsBorder: colors.gray700,
-	scmHistorySelectedStatisticsBorder: colors.coral500,
+	scmHistorySelectedStatisticsBorder: colors.orange500,
 
 	// =========================================================================
 	// ZED ELEMENT STATES
@@ -980,7 +976,7 @@ export const semantic = {
 	// ZED ICON COLORS
 	// =========================================================================
 	zedIcon: colors.gray75,
-	zedIconAccent: colors.coral400,
+	zedIconAccent: colors.orange400,
 	zedIconDisabled: colors.gray250,
 	zedIconMuted: colors.gray175,
 	zedIconPlaceholder: colors.gray300,
@@ -1013,16 +1009,16 @@ export const semantic = {
 	// ZED EDITOR REFINEMENTS
 	// =========================================================================
 	zedEditorActiveLineNumber: colors.gray100,
-	zedDocHighlightWrite: `${colors.coral400}30`,
-	zedEditorDocHighlightWrite: `${colors.coral400}30`,
+	zedDocHighlightWrite: `${colors.orange400}30`,
+	zedEditorDocHighlightWrite: `${colors.orange400}30`,
 	zedEditorSubheaderBackground: colors.gray775,
 	zedEditorActiveWrapGuide: colors.gray400,
 
 	// =========================================================================
 	// ZED PANEL FOCUS
 	// =========================================================================
-	zedPanelFocusedBorder: colors.coral400,
-	zedPaneFocusedBorder: colors.coral400,
+	zedPanelFocusedBorder: colors.orange400,
+	zedPaneFocusedBorder: colors.orange400,
 
 	// =========================================================================
 	// ZED SCROLLBAR REFINEMENTS
@@ -1035,12 +1031,12 @@ export const semantic = {
 	// =========================================================================
 	// ZED DROP TARGET
 	// =========================================================================
-	zedDropTarget: `${colors.coral400}30`,
+	zedDropTarget: `${colors.orange400}30`,
 
 	// =========================================================================
 	// ZED SEARCH
 	// =========================================================================
-	zedSearchMatch: `${colors.coral500}30`,
+	zedSearchMatch: `${colors.orange500}30`,
 
 	// =========================================================================
 	// ZED LINK
@@ -1054,11 +1050,11 @@ export const semantic = {
 	zedSyntaxPreproc: colors.purple300,
 	zedSyntaxPrimary: colors.cream150,
 	zedSyntaxTitle: colors.pink500,
-	zedSyntaxVariant: colors.coral100,
+	zedSyntaxVariant: colors.orange100,
 	zedSyntaxPredictive: colors.gray75,
-	zedSyntaxStringEscape: colors.coral500,
-	zedSyntaxStringRegex: colors.coral400,
-	zedSyntaxStringSpecial: colors.coral500,
+	zedSyntaxStringEscape: colors.orange500,
+	zedSyntaxStringRegex: colors.orange400,
+	zedSyntaxStringSpecial: colors.orange500,
 	zedSyntaxStringSymbol: colors.cyan400,
 	zedSyntaxLinkText: colors.cyan400,
 	zedSyntaxLinkUri: colors.blue400,
@@ -1096,3 +1092,7 @@ export const semantic = {
 
 // Backwards compatibility - export primitives as alias
 export const primitives = colors;
+
+// Type export for variant system
+// Use Record to allow string values instead of literal types for variant overrides
+export type Semantic = { [K in keyof typeof semantic]: string };

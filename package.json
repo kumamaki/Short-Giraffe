@@ -20,6 +20,16 @@
 				"label": "Short Giraffe",
 				"uiTheme": "vs-dark",
 				"path": "./vscode/theme.json"
+			},
+			{
+				"label": "Short Giraffe Darker",
+				"uiTheme": "vs-dark",
+				"path": "./vscode/theme-darker.json"
+			},
+			{
+				"label": "Short Giraffe High Contrast",
+				"uiTheme": "hc-black",
+				"path": "./vscode/theme-high-contrast.json"
 			}
 		]
 	},
