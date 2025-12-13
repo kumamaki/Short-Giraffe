@@ -3,7 +3,7 @@
  * Used by both VS Code and Zed theme generators
  */
 
-import { primitives, semantic } from "./palette";
+import { semantic } from "./palette";
 
 // Shared token styles - the "what" without the "how to apply"
 export const tokens = {
@@ -15,7 +15,7 @@ export const tokens = {
 		fontStyle: "italic" as const,
 	},
 	keywordOperator: {
-		color: semantic.syntaxKeywordOperator,
+		color: semantic.syntaxOperator,
 		fontStyle: "normal" as const,
 	},
 	variable: {
@@ -39,7 +39,7 @@ export const tokens = {
 		color: semantic.syntaxType,
 	},
 	class: {
-		color: semantic.syntaxParameter,
+		color: semantic.syntaxClass,
 		fontStyle: "bold" as const,
 	},
 	property: {
@@ -59,26 +59,26 @@ export const tokens = {
 		fontStyle: "italic" as const,
 	},
 	builtinObject: {
-		color: primitives.orange,
+		color: semantic.syntaxBuiltinObject,
 		fontStyle: "bold" as const,
 	},
 	super: {
-		color: semantic.syntaxFunction,
+		color: semantic.syntaxSuper,
 		fontStyle: "bold" as const,
 	},
 	customComponent: {
-		color: primitives.purple,
+		color: semantic.syntaxComponent,
 	},
 	vueProp: {
-		color: primitives.purple,
+		color: semantic.syntaxVueProp,
 	},
 	interface: {
-		color: primitives.purpleType,
+		color: semantic.semanticInterface,
 	},
 	enum: {
-		color: primitives.orangeCSS,
+		color: semantic.semanticEnum,
 	},
 	enumMember: {
-		color: primitives.pink,
+		color: semantic.semanticEnumMember,
 	},
 } as const;

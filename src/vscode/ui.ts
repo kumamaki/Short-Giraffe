@@ -1,350 +1,350 @@
 /**
  * VS Code UI Colors
- * Maps all 207+ UI color properties to palette values
+ * Maps all 207+ UI color properties to semantic values
  */
 
-import { primitives } from "../palette";
+import { semantic } from "../palette";
 
 export const vscodeColors: Record<string, string> = {
 	// -------------------------------------------------------------------------
 	// Base colors
 	// -------------------------------------------------------------------------
-	"sash.hoverBorder": primitives.accent,
-	"icon.foreground": primitives.gray50,
-	errorForeground: primitives.errorDark,
-	focusBorder: primitives.gray275,
-	foreground: primitives.textPrimaryAlt,
-	"widget.shadow": primitives.gray775,
-	"selection.background": `${primitives.gray500}fd`,
+	"sash.hoverBorder": semantic.sashHover,
+	"icon.foreground": semantic.iconForeground,
+	errorForeground: semantic.errorForeground,
+	focusBorder: semantic.focusBorder,
+	foreground: semantic.foreground,
+	"widget.shadow": semantic.widgetShadow,
+	"selection.background": semantic.selectionBackground,
 
 	// -------------------------------------------------------------------------
 	// Text
 	// -------------------------------------------------------------------------
-	"textBlockQuote.background": primitives.gray550,
-	"textLink.foreground": primitives.cyan,
-	"textPreformat.foreground": primitives.blueGit,
-	"textLink.activeForeground": primitives.blueLink,
+	"textBlockQuote.background": semantic.textBlockQuote,
+	"textLink.foreground": semantic.textLink,
+	"textPreformat.foreground": semantic.textPreformat,
+	"textLink.activeForeground": semantic.textLinkActive,
 
 	// -------------------------------------------------------------------------
 	// Buttons
 	// -------------------------------------------------------------------------
-	"button.background": primitives.gray300,
-	"button.border": primitives.gray300,
-	"button.foreground": primitives.textPrimaryAlt,
-	"button.hoverBackground": primitives.gray300,
-	"button.secondaryBackground": primitives.gray300,
-	"button.secondaryForeground": primitives.gray50,
+	"button.background": semantic.buttonBackground,
+	"button.border": semantic.buttonBorder,
+	"button.foreground": semantic.buttonForeground,
+	"button.hoverBackground": semantic.buttonHover,
+	"button.secondaryBackground": semantic.buttonSecondary,
+	"button.secondaryForeground": semantic.buttonSecondaryForeground,
 
 	// -------------------------------------------------------------------------
 	// Checkbox
 	// -------------------------------------------------------------------------
-	"checkbox.background": primitives.gray725,
-	"checkbox.foreground": primitives.textPrimaryAlt,
+	"checkbox.background": semantic.checkboxBackground,
+	"checkbox.foreground": semantic.checkboxForeground,
 
 	// -------------------------------------------------------------------------
 	// Dropdown
 	// -------------------------------------------------------------------------
-	"dropdown.background": primitives.gray800,
-	"dropdown.foreground": primitives.gray100,
-	"dropdown.border": primitives.gray350,
+	"dropdown.background": semantic.dropdownBackground,
+	"dropdown.foreground": semantic.dropdownForeground,
+	"dropdown.border": semantic.dropdownBorder,
 
 	// -------------------------------------------------------------------------
 	// Input
 	// -------------------------------------------------------------------------
-	"input.background": primitives.gray800,
-	"input.border": primitives.gray300,
-	"input.foreground": primitives.gray100,
-	"input.placeholderForeground": primitives.gray225,
-	"inputOption.activeBorder": primitives.accent,
-	"inputValidation.errorBackground": primitives.gray725,
-	"inputValidation.errorBorder": primitives.errorBright,
-	"inputValidation.infoBackground": primitives.gray725,
-	"inputValidation.infoBorder": primitives.infoCyan,
-	"inputValidation.warningBackground": primitives.gray725,
-	"inputValidation.warningBorder": primitives.warningYellow,
+	"input.background": semantic.inputBackground,
+	"input.border": semantic.inputBorder,
+	"input.foreground": semantic.inputForeground,
+	"input.placeholderForeground": semantic.inputPlaceholder,
+	"inputOption.activeBorder": semantic.inputOptionActive,
+	"inputValidation.errorBackground": semantic.inputValidationError,
+	"inputValidation.errorBorder": semantic.inputValidationErrorBorder,
+	"inputValidation.infoBackground": semantic.inputValidationInfo,
+	"inputValidation.infoBorder": semantic.inputValidationInfoBorder,
+	"inputValidation.warningBackground": semantic.inputValidationWarning,
+	"inputValidation.warningBorder": semantic.inputValidationWarningBorder,
 
 	// -------------------------------------------------------------------------
 	// Scrollbar
 	// -------------------------------------------------------------------------
-	"scrollbar.shadow": primitives.gray575,
-	"scrollbarSlider.background": primitives.black20,
-	"scrollbarSlider.hoverBackground": primitives.black30,
-	"scrollbarSlider.activeBackground": primitives.black40,
+	"scrollbar.shadow": semantic.scrollbarShadow,
+	"scrollbarSlider.background": semantic.scrollbarSlider,
+	"scrollbarSlider.hoverBackground": semantic.scrollbarSliderHover,
+	"scrollbarSlider.activeBackground": semantic.scrollbarSliderActive,
 
 	// -------------------------------------------------------------------------
 	// Minimap
 	// -------------------------------------------------------------------------
-	"minimapSlider.background": primitives.black30,
-	"minimapSlider.hoverBackground": primitives.black40,
-	"minimapSlider.activeBackground": primitives.black50,
+	"minimapSlider.background": semantic.minimapSlider,
+	"minimapSlider.hoverBackground": semantic.minimapSliderHover,
+	"minimapSlider.activeBackground": semantic.minimapSliderActive,
 
 	// -------------------------------------------------------------------------
 	// Badge
 	// -------------------------------------------------------------------------
-	"badge.background": primitives.accent,
-	"badge.foreground": primitives.gray725,
+	"badge.background": semantic.badgeBackground,
+	"badge.foreground": semantic.badgeForeground,
 
 	// -------------------------------------------------------------------------
 	// Progress bar
 	// -------------------------------------------------------------------------
-	"progressBar.background": primitives.accent,
+	"progressBar.background": semantic.progressBar,
 
 	// -------------------------------------------------------------------------
 	// Lists
 	// -------------------------------------------------------------------------
-	"list.activeSelectionBackground": primitives.gray575,
-	"list.activeSelectionForeground": primitives.textPrimary,
-	"list.focusBackground": primitives.gray650,
-	"list.focusForeground": primitives.accent,
-	"list.highlightForeground": primitives.accent,
-	"list.hoverBackground": primitives.gray650,
-	"list.hoverForeground": primitives.orange,
-	"list.inactiveSelectionBackground": primitives.gray650,
-	"list.inactiveSelectionForeground": primitives.textLight,
-	"list.invalidItemForeground": primitives.gray225,
+	"list.activeSelectionBackground": semantic.listActiveSelection,
+	"list.activeSelectionForeground": semantic.listActiveSelectionForeground,
+	"list.focusBackground": semantic.listFocusBackground,
+	"list.focusForeground": semantic.listFocusForeground,
+	"list.highlightForeground": semantic.listHighlight,
+	"list.hoverBackground": semantic.listHoverBackground,
+	"list.hoverForeground": semantic.listHoverForeground,
+	"list.inactiveSelectionBackground": semantic.listInactiveSelection,
+	"list.inactiveSelectionForeground": semantic.listInactiveSelectionForeground,
+	"list.invalidItemForeground": semantic.listInvalidItem,
 
 	// -------------------------------------------------------------------------
 	// Activity bar
 	// -------------------------------------------------------------------------
-	"activityBar.background": primitives.gray900,
-	"activityBar.foreground": primitives.accent,
-	"activityBar.border": primitives.gray900,
-	"activityBar.inactiveForeground": primitives.gray300,
-	"activityBarBadge.background": primitives.accent,
-	"activityBarBadge.foreground": primitives.gray725,
+	"activityBar.background": semantic.activityBarBackground,
+	"activityBar.foreground": semantic.activityBarForeground,
+	"activityBar.border": semantic.activityBarBorder,
+	"activityBar.inactiveForeground": semantic.activityBarInactive,
+	"activityBarBadge.background": semantic.activityBarBadge,
+	"activityBarBadge.foreground": semantic.activityBarBadgeForeground,
 
 	// -------------------------------------------------------------------------
 	// Sidebar
 	// -------------------------------------------------------------------------
-	"sideBar.background": primitives.gray750,
-	"sideBar.foreground": primitives.gray50,
-	"sideBar.border": primitives.gray900,
-	"sideBarTitle.foreground": primitives.accentLight,
-	"sideBarSectionHeader.background": primitives.gray750,
-	"sideBarSectionHeader.foreground": primitives.accentLight,
+	"sideBar.background": semantic.sidebarBackground,
+	"sideBar.foreground": semantic.sidebarForeground,
+	"sideBar.border": semantic.sidebarBorder,
+	"sideBarTitle.foreground": semantic.sidebarTitle,
+	"sideBarSectionHeader.background": semantic.sidebarBackground,
+	"sideBarSectionHeader.foreground": semantic.sidebarSectionHeader,
 
 	// -------------------------------------------------------------------------
 	// Editor groups
 	// -------------------------------------------------------------------------
-	"editorGroup.border": primitives.gray900,
-	"editorGroup.emptyBackground": primitives.gray650,
-	"editorGroupHeader.noTabsBackground": primitives.gray725,
-	"editorGroupHeader.tabsBackground": primitives.gray725,
-	"editorGroupHeader.tabsBorder": primitives.gray700,
-	"editorGroup.dropBackground": `${primitives.gray900}20`,
+	"editorGroup.border": semantic.tabGroupBorder,
+	"editorGroup.emptyBackground": semantic.tabGroupEmpty,
+	"editorGroupHeader.noTabsBackground": semantic.editorBackground,
+	"editorGroupHeader.tabsBackground": semantic.editorBackground,
+	"editorGroupHeader.tabsBorder": semantic.tabGroupHeaderBorder,
+	"editorGroup.dropBackground": semantic.tabGroupDrop,
 
 	// -------------------------------------------------------------------------
 	// Tabs
 	// -------------------------------------------------------------------------
-	"tab.activeBackground": primitives.gray575,
-	"tab.activeForeground": primitives.accent,
-	"tab.border": primitives.gray725,
-	"tab.activeBorderTop": primitives.accent,
-	"tab.unfocusedActiveBorderTop": primitives.textPrimaryAlt,
-	"tab.inactiveBackground": primitives.gray725,
-	"tab.inactiveForeground": primitives.gray175,
-	"tab.unfocusedInactiveBackground": primitives.gray725,
-	"tab.unfocusedActiveBackground": primitives.gray725,
-	"tab.unfocusedActiveForeground": primitives.gray175,
-	"tab.unfocusedInactiveForeground": primitives.gray175,
+	"tab.activeBackground": semantic.tabActiveBackground,
+	"tab.activeForeground": semantic.tabActiveForeground,
+	"tab.border": semantic.tabBorder,
+	"tab.activeBorderTop": semantic.tabActiveBorderTop,
+	"tab.unfocusedActiveBorderTop": semantic.tabUnfocusedActiveBorderTop,
+	"tab.inactiveBackground": semantic.tabInactiveBackground,
+	"tab.inactiveForeground": semantic.tabInactiveForeground,
+	"tab.unfocusedInactiveBackground": semantic.tabInactiveBackground,
+	"tab.unfocusedActiveBackground": semantic.tabInactiveBackground,
+	"tab.unfocusedActiveForeground": semantic.tabInactiveForeground,
+	"tab.unfocusedInactiveForeground": semantic.tabInactiveForeground,
 
 	// -------------------------------------------------------------------------
 	// Editor
 	// -------------------------------------------------------------------------
-	"editor.background": primitives.gray725,
-	"editor.foreground": primitives.textPrimary,
-	"editorLineNumber.foreground": primitives.gray300,
-	"editorLineNumber.activeForeground": primitives.gray100,
-	"editorCursor.foreground": primitives.accent,
-	"editor.selectionBackground": primitives.gray500,
-	"editor.inactiveSelectionBackground": primitives.gray525,
-	"editor.selectionHighlightBackground": primitives.gray575,
-	"editor.selectionHighlightBorder": primitives.gray425,
-	"editor.wordHighlightBackground": primitives.gray525,
-	"editor.wordHighlightStrongBackground": `${primitives.accent}33`,
-	"editor.findMatchBackground": `${primitives.accent}0d`,
-	"editor.findMatchBorder": primitives.accent,
-	"editor.findMatchHighlightBackground": `${primitives.accent}0d`,
-	"editor.findMatchHighlightBorder": `${primitives.accent}59`,
-	"editor.findRangeHighlightBackground": primitives.gray525,
-	"editor.findRangeHighlightBorder": `${primitives.gray725}00`,
-	"editor.lineHighlightBackground": primitives.gray575,
-	"editorInlayHint.foreground": `${primitives.blueSky}BB`,
-	"editorInlayHint.background": primitives.transparent,
-	"editorLink.activeForeground": primitives.cyan,
-	"editor.rangeHighlightBackground": primitives.gray700,
-	"editorWhitespace.foreground": `${primitives.gray175}66`,
-	"editorIndentGuide.background": primitives.gray575,
-	"editorIndentGuide.activeBackground": `${primitives.gray175}b3`,
-	"editorRuler.foreground": primitives.gray575,
-	"editorCodeLens.foreground": primitives.gray200,
-	"editorBracketMatch.background": primitives.gray575,
-	"editorBracketMatch.border": `${primitives.gray175}99`,
+	"editor.background": semantic.editorBackground,
+	"editor.foreground": semantic.editorForeground,
+	"editorLineNumber.foreground": semantic.editorLineNumber,
+	"editorLineNumber.activeForeground": semantic.editorLineNumberActive,
+	"editorCursor.foreground": semantic.editorCursor,
+	"editor.selectionBackground": semantic.editorSelection,
+	"editor.inactiveSelectionBackground": semantic.editorSelectionInactive,
+	"editor.selectionHighlightBackground": semantic.editorSelectionHighlight,
+	"editor.selectionHighlightBorder": semantic.editorSelectionHighlightBorder,
+	"editor.wordHighlightBackground": semantic.editorWordHighlight,
+	"editor.wordHighlightStrongBackground": semantic.editorWordHighlightStrong,
+	"editor.findMatchBackground": semantic.editorFindMatch,
+	"editor.findMatchBorder": semantic.editorFindMatchBorder,
+	"editor.findMatchHighlightBackground": semantic.editorFindMatchHighlight,
+	"editor.findMatchHighlightBorder": semantic.editorFindMatchHighlightBorder,
+	"editor.findRangeHighlightBackground": semantic.editorFindRange,
+	"editor.findRangeHighlightBorder": `${semantic.editorBackground}00`,
+	"editor.lineHighlightBackground": semantic.editorLineHighlight,
+	"editorInlayHint.foreground": semantic.editorInlayHint,
+	"editorInlayHint.background": semantic.editorInlayHintBg,
+	"editorLink.activeForeground": semantic.editorLink,
+	"editor.rangeHighlightBackground": semantic.editorRangeHighlight,
+	"editorWhitespace.foreground": semantic.editorWhitespace,
+	"editorIndentGuide.background": semantic.editorIndentGuide,
+	"editorIndentGuide.activeBackground": semantic.editorIndentGuideActive,
+	"editorRuler.foreground": semantic.editorRuler,
+	"editorCodeLens.foreground": semantic.editorCodeLens,
+	"editorBracketMatch.background": semantic.editorBracketMatch,
+	"editorBracketMatch.border": semantic.editorBracketMatchBorder,
 
 	// -------------------------------------------------------------------------
 	// Editor overview ruler
 	// -------------------------------------------------------------------------
-	"editorOverviewRuler.border": primitives.gray700,
-	"editorOverviewRuler.modifiedForeground": `${primitives.blueMod}99`,
-	"editorOverviewRuler.addedForeground": `${primitives.success}99`,
-	"editorOverviewRuler.deletedForeground": primitives.errorGutter,
-	"editorOverviewRuler.errorForeground": primitives.errorBright,
-	"editorOverviewRuler.warningForeground": primitives.accent,
+	"editorOverviewRuler.border": semantic.overviewRulerBorder,
+	"editorOverviewRuler.modifiedForeground": semantic.overviewRulerModified,
+	"editorOverviewRuler.addedForeground": semantic.overviewRulerAdded,
+	"editorOverviewRuler.deletedForeground": semantic.overviewRulerDeleted,
+	"editorOverviewRuler.errorForeground": semantic.overviewRulerError,
+	"editorOverviewRuler.warningForeground": semantic.overviewRulerWarning,
 
 	// -------------------------------------------------------------------------
 	// Diff editor
 	// -------------------------------------------------------------------------
-	"diffEditor.insertedTextBackground": primitives.successDiff,
-	"diffEditor.removedTextBackground": primitives.errorDiff,
+	"diffEditor.insertedTextBackground": semantic.diffInserted,
+	"diffEditor.removedTextBackground": semantic.diffRemoved,
 
 	// -------------------------------------------------------------------------
 	// Editor widget
 	// -------------------------------------------------------------------------
-	"editorWidget.background": primitives.gray550,
-	"editorSuggestWidget.background": primitives.gray475,
-	"editorSuggestWidget.border": primitives.gray875,
-	"editorSuggestWidget.highlightForeground": primitives.error,
-	"editorSuggestWidget.selectedBackground": primitives.successHighlight,
-	"editorSuggestWidget.selectedForeground": primitives.textPrimary,
-	"editorHoverWidget.background": primitives.gray550,
-	"editorHoverWidget.border": primitives.gray875,
+	"editorWidget.background": semantic.widgetBackground,
+	"editorSuggestWidget.background": semantic.suggestWidgetBackground,
+	"editorSuggestWidget.border": semantic.suggestWidgetBorder,
+	"editorSuggestWidget.highlightForeground": semantic.suggestWidgetHighlight,
+	"editorSuggestWidget.selectedBackground": semantic.suggestWidgetSelected,
+	"editorSuggestWidget.selectedForeground": semantic.editorForeground,
+	"editorHoverWidget.background": semantic.widgetBackground,
+	"editorHoverWidget.border": semantic.widgetBorder,
 
 	// -------------------------------------------------------------------------
 	// Debug
 	// -------------------------------------------------------------------------
-	"debugExceptionWidget.border": primitives.gray700,
-	"debugExceptionWidget.background": primitives.gray550,
-	"editorMarkerNavigation.background": primitives.gray550,
+	"debugExceptionWidget.border": semantic.debugExceptionBorder,
+	"debugExceptionWidget.background": semantic.debugExceptionBackground,
+	"editorMarkerNavigation.background": semantic.widgetBackground,
 
 	// -------------------------------------------------------------------------
 	// Peek view
 	// -------------------------------------------------------------------------
-	"peekView.border": primitives.gray700,
-	"peekViewEditor.background": primitives.gray550,
-	"peekViewEditor.matchHighlightBackground": `${primitives.accent}33`,
-	"peekViewResult.background": primitives.gray550,
-	"peekViewResult.fileForeground": primitives.gray175,
-	"peekViewResult.matchHighlightBackground": `${primitives.accent}33`,
-	"peekViewTitle.background": primitives.gray550,
-	"peekViewTitleDescription.foreground": primitives.gray175,
-	"peekViewTitleLabel.foreground": primitives.gray175,
+	"peekView.border": semantic.peekViewBorder,
+	"peekViewEditor.background": semantic.peekViewBackground,
+	"peekViewEditor.matchHighlightBackground": semantic.peekViewMatchHighlight,
+	"peekViewResult.background": semantic.peekViewResult,
+	"peekViewResult.fileForeground": semantic.peekViewResultFile,
+	"peekViewResult.matchHighlightBackground": semantic.peekViewMatchHighlight,
+	"peekViewTitle.background": semantic.peekViewTitle,
+	"peekViewTitleDescription.foreground": semantic.peekViewTitleDescription,
+	"peekViewTitleLabel.foreground": semantic.peekViewTitleLabel,
 
 	// -------------------------------------------------------------------------
 	// Panel
 	// -------------------------------------------------------------------------
-	"panel.background": primitives.gray725,
-	"panel.border": primitives.gray450,
-	"panelTitle.activeBorder": primitives.gray325,
-	"panelTitle.activeForeground": primitives.gray25,
-	"panelTitle.inactiveForeground": primitives.gray175,
+	"panel.background": semantic.panelBackground,
+	"panel.border": semantic.panelBorder,
+	"panelTitle.activeBorder": semantic.panelTitleActiveBorder,
+	"panelTitle.activeForeground": semantic.panelTitleActive,
+	"panelTitle.inactiveForeground": semantic.panelTitleInactive,
 
 	// -------------------------------------------------------------------------
 	// Notifications
 	// -------------------------------------------------------------------------
-	"notifications.background": primitives.gray625,
+	"notifications.background": semantic.notificationBackground,
 
 	// -------------------------------------------------------------------------
 	// Status bar
 	// -------------------------------------------------------------------------
-	"statusBar.background": primitives.accentLight,
-	"statusBar.foreground": primitives.gray800,
-	"statusBar.border": primitives.gray700,
-	"statusBar.debuggingBackground": primitives.accent,
-	"statusBar.debuggingForeground": primitives.gray725,
-	"statusBar.noFolderBackground": primitives.gray550,
-	"statusBarItem.activeBackground": primitives.black50,
-	"statusBarItem.hoverBackground": primitives.accentMuted,
-	"statusBarItem.prominentBackground": primitives.accent,
-	"statusBarItem.prominentHoverBackground": primitives.black30,
+	"statusBar.background": semantic.statusBarBackground,
+	"statusBar.foreground": semantic.statusBarForeground,
+	"statusBar.border": semantic.statusBarBorder,
+	"statusBar.debuggingBackground": semantic.statusBarDebuggingBackground,
+	"statusBar.debuggingForeground": semantic.statusBarDebuggingForeground,
+	"statusBar.noFolderBackground": semantic.statusBarNoFolder,
+	"statusBarItem.activeBackground": semantic.statusBarItemActive,
+	"statusBarItem.hoverBackground": semantic.statusBarItemHover,
+	"statusBarItem.prominentBackground": semantic.statusBarItemProminent,
+	"statusBarItem.prominentHoverBackground": semantic.statusBarItemProminentHover,
 
 	// -------------------------------------------------------------------------
 	// Title bar
 	// -------------------------------------------------------------------------
-	"titleBar.activeBackground": primitives.gray750,
-	"titleBar.activeForeground": primitives.gray25,
-	"titleBar.inactiveBackground": primitives.gray725,
-	"titleBar.inactiveForeground": primitives.gray175,
-	"titleBar.border": primitives.gray700,
+	"titleBar.activeBackground": semantic.titleBarActive,
+	"titleBar.activeForeground": semantic.titleBarActiveForeground,
+	"titleBar.inactiveBackground": semantic.titleBarInactive,
+	"titleBar.inactiveForeground": semantic.titleBarInactiveForeground,
+	"titleBar.border": semantic.titleBarBorder,
 
 	// -------------------------------------------------------------------------
 	// Extension buttons
 	// -------------------------------------------------------------------------
-	"extensionButton.prominentForeground": primitives.gray725,
-	"extensionButton.prominentBackground": primitives.accent,
-	"extensionButton.prominentHoverBackground": "#fac761",
+	"extensionButton.prominentForeground": semantic.extensionButtonForeground,
+	"extensionButton.prominentBackground": semantic.extensionButtonBackground,
+	"extensionButton.prominentHoverBackground": semantic.extensionButtonHover,
 
 	// -------------------------------------------------------------------------
 	// Debug toolbar
 	// -------------------------------------------------------------------------
-	"debugToolBar.background": primitives.gray550,
+	"debugToolBar.background": semantic.debugToolbar,
 
 	// -------------------------------------------------------------------------
 	// Walkthrough
 	// -------------------------------------------------------------------------
-	"walkThrough.embeddedEditorBackground": primitives.gray550,
+	"walkThrough.embeddedEditorBackground": semantic.widgetBackground,
 
 	// -------------------------------------------------------------------------
 	// Settings
 	// -------------------------------------------------------------------------
-	"settings.headerForeground": primitives.gray25,
-	"settings.modifiedItemIndicator": primitives.blueMod,
+	"settings.headerForeground": semantic.settingsHeader,
+	"settings.modifiedItemIndicator": semantic.settingsModified,
 
 	// -------------------------------------------------------------------------
 	// Terminal
 	// -------------------------------------------------------------------------
-	"terminal.background": primitives.gray725,
-	"terminal.foreground": primitives.gray25,
-	"terminal.ansiBlack": primitives.gray700,
-	"terminal.ansiRed": primitives.errorTerminal,
-	"terminal.ansiGreen": primitives.success,
-	"terminal.ansiYellow": primitives.warningTerminal,
-	"terminal.ansiBlue": primitives.blueInfo,
-	"terminal.ansiMagenta": primitives.terminalMagenta,
-	"terminal.ansiCyan": primitives.terminalCyan,
-	"terminal.ansiWhite": primitives.terminalWhite,
-	"terminal.ansiBrightBlack": primitives.terminalBlackBright,
-	"terminal.ansiBrightRed": primitives.errorTerminalBright,
-	"terminal.ansiBrightGreen": primitives.successBright,
-	"terminal.ansiBrightYellow": primitives.warningYellow,
-	"terminal.ansiBrightBlue": primitives.infoBright,
-	"terminal.ansiBrightMagenta": primitives.terminalMagentaBright,
-	"terminal.ansiBrightCyan": primitives.terminalCyanBright,
-	"terminal.ansiBrightWhite": primitives.terminalWhiteBright,
+	"terminal.background": semantic.terminalBackground,
+	"terminal.foreground": semantic.terminalForeground,
+	"terminal.ansiBlack": semantic.terminalBlack,
+	"terminal.ansiRed": semantic.terminalRed,
+	"terminal.ansiGreen": semantic.terminalGreen,
+	"terminal.ansiYellow": semantic.terminalYellow,
+	"terminal.ansiBlue": semantic.terminalBlue,
+	"terminal.ansiMagenta": semantic.terminalMagenta,
+	"terminal.ansiCyan": semantic.terminalCyan,
+	"terminal.ansiWhite": semantic.terminalWhite,
+	"terminal.ansiBrightBlack": semantic.terminalBrightBlack,
+	"terminal.ansiBrightRed": semantic.terminalBrightRed,
+	"terminal.ansiBrightGreen": semantic.terminalBrightGreen,
+	"terminal.ansiBrightYellow": semantic.terminalBrightYellow,
+	"terminal.ansiBrightBlue": semantic.terminalBrightBlue,
+	"terminal.ansiBrightMagenta": semantic.terminalBrightMagenta,
+	"terminal.ansiBrightCyan": semantic.terminalBrightCyan,
+	"terminal.ansiBrightWhite": semantic.terminalBrightWhite,
 
 	// -------------------------------------------------------------------------
 	// Editor errors/warnings
 	// -------------------------------------------------------------------------
-	"editorError.foreground": primitives.error,
-	"editorWarning.foreground": primitives.accentMuted,
-	"editorInfo.foreground": primitives.gray300,
+	"editorError.foreground": semantic.errorBright,
+	"editorWarning.foreground": semantic.warningForeground,
+	"editorInfo.foreground": semantic.infoForeground,
 
 	// -------------------------------------------------------------------------
 	// Git decorations
 	// -------------------------------------------------------------------------
-	"gitDecoration.modifiedResourceForeground": primitives.blueGit,
-	"gitDecoration.addedResourceForeground": primitives.blueGit,
-	"gitDecoration.stageModifiedResourceForeground": primitives.blueGit,
-	"gitDecoration.deletedResourceForeground": primitives.pink,
-	"gitDecoration.untrackedResourceForeground": primitives.cyan,
-	"gitDecoration.ignoredResourceForeground": primitives.gray100,
-	"gitDecoration.conflictingResourceForeground": primitives.textYellow,
-	"gitDecoration.submoduleResourceForeground": primitives.purpleSubmodule,
+	"gitDecoration.modifiedResourceForeground": semantic.gitModified,
+	"gitDecoration.addedResourceForeground": semantic.gitAdded,
+	"gitDecoration.stageModifiedResourceForeground": semantic.gitStageModified,
+	"gitDecoration.deletedResourceForeground": semantic.gitDeleted,
+	"gitDecoration.untrackedResourceForeground": semantic.gitUntracked,
+	"gitDecoration.ignoredResourceForeground": semantic.gitIgnored,
+	"gitDecoration.conflictingResourceForeground": semantic.gitConflict,
+	"gitDecoration.submoduleResourceForeground": semantic.gitSubmodule,
 
 	// -------------------------------------------------------------------------
 	// Editor gutter
 	// -------------------------------------------------------------------------
-	"editorGutter.background": primitives.gray725,
-	"editorGutter.modifiedBackground": primitives.accentDark,
-	"editorGutter.addedBackground": `${primitives.success}99`,
-	"editorGutter.deletedBackground": primitives.errorGutter,
+	"editorGutter.background": semantic.gutterBackground,
+	"editorGutter.modifiedBackground": semantic.gutterModified,
+	"editorGutter.addedBackground": semantic.gutterAdded,
+	"editorGutter.deletedBackground": semantic.gutterDeleted,
 
 	// -------------------------------------------------------------------------
 	// Quick input
 	// -------------------------------------------------------------------------
-	"quickInput.background": primitives.gray575,
-	"pickerGroup.border": primitives.gray100,
-	"pickerGroup.foreground": primitives.gray100,
-	"quickInputList.focusBackground": primitives.gray575,
-	"quickInputList.focusForeground": primitives.accentMuted,
-	"quickInputList.focusIconForeground": primitives.cyan,
+	"quickInput.background": semantic.quickInputBackground,
+	"pickerGroup.border": semantic.pickerGroupBorder,
+	"pickerGroup.foreground": semantic.pickerGroupForeground,
+	"quickInputList.focusBackground": semantic.quickInputFocusBackground,
+	"quickInputList.focusForeground": semantic.quickInputFocusForeground,
+	"quickInputList.focusIconForeground": semantic.quickInputFocusIcon,
 };
