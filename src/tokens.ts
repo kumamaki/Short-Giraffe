@@ -3,10 +3,11 @@
  * Used by both VS Code and Zed theme generators
  */
 
-import { semantic } from "./palette";
+import type { Semantic } from "./palette";
 
 // Shared token styles - the "what" without the "how to apply"
-export const tokens = {
+export function createTokens(semantic: Semantic) {
+	return {
 	function: {
 		color: semantic.syntaxFunction,
 	},
@@ -81,4 +82,7 @@ export const tokens = {
 	enumMember: {
 		color: semantic.semanticEnumMember,
 	},
-} as const;
+	} as const;
+}
+
+export type Tokens = ReturnType<typeof createTokens>;

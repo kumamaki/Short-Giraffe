@@ -8,10 +8,10 @@
 			"name": "Short Giraffe",
 			"appearance": "dark",
 			"style": {
-				"background": "#13161D",
-				"surface.background": "#0C0E13",
-				"elevated_surface.background": "#0C0E13",
-				"panel.background": "#0d1016",
+				"background": "#151b25",
+				"surface.background": "#0F131A",
+				"elevated_surface.background": "#0F131A",
+				"panel.background": "#151b25",
 				"panel.focused_border": "#FFB69E",
 				"pane.focused_border": "#FFB69E",
 				"border": "#1B1F28",
@@ -40,7 +40,7 @@
 				"ghost_element.active": "#222630",
 				"ghost_element.selected": "#1d2431",
 				"ghost_element.disabled": "#191e2a",
-				"editor.background": "#141821",
+				"editor.background": "#191F2B",
 				"editor.foreground": "#EDEFF4",
 				"editor.line_number": "#333842",
 				"editor.active_line_number": "#A3A5AA",
@@ -49,16 +49,16 @@
 				"editor.wrap_guide": "#333842",
 				"editor.active_line.background": "#1B1F28",
 				"editor.highlighted_line.background": "#222630",
-				"editor.gutter.background": "#141821",
+				"editor.gutter.background": "#191F2B",
 				"editor.document_highlight.read_background": "#373D4A",
 				"editor.document_highlight.write_background": "#FFB69E30",
 				"editor.subheader.background": "#141925",
 				"tab.active_background": "#1B1F28",
-				"tab.inactive_background": "#13161D",
-				"tab_bar.background": "#141821",
-				"title_bar.background": "#0C0E13",
-				"toolbar.background": "#141821",
-				"status_bar.background": "#141821",
+				"tab.inactive_background": "#141A25",
+				"tab_bar.background": "#151b25",
+				"title_bar.background": "#151b25",
+				"toolbar.background": "#151b25",
+				"status_bar.background": "#151b25",
 				"created": "#45CAC2",
 				"deleted": "#F6ABA8",
 				"conflict": "#F6ABA8",
@@ -177,7 +177,7 @@
 						"color": "#8BB8F9"
 					},
 					"enum": {
-						"color": "#E6BB8D"
+						"color": "#FFB69E"
 					},
 					"function": {
 						"color": "#45CAC2"

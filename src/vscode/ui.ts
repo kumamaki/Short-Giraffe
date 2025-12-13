@@ -3,9 +3,10 @@
  * Maps all 207+ UI color properties to semantic values
  */
 
-import { semantic } from "../palette";
+import type { Semantic } from "../palette";
 
-export const vscodeColors: Record<string, string> = {
+export function createVscodeColors(semantic: Semantic): Record<string, string> {
+	return {
 	// -------------------------------------------------------------------------
 	// Base colors
 	// -------------------------------------------------------------------------
@@ -269,6 +270,10 @@ export const vscodeColors: Record<string, string> = {
 	// -------------------------------------------------------------------------
 	// Extension buttons
 	// -------------------------------------------------------------------------
+	"extensionButton.background": semantic.extensionButtonBackground,
+	"extensionButton.foreground": semantic.extensionButtonForeground,
+	"extensionButton.hoverBackground": semantic.extensionButtonHover,
+	"extensionButton.separator": semantic.extensionButtonSeparator,
 	"extensionButton.prominentForeground": semantic.extensionButtonForeground,
 	"extensionButton.prominentBackground": semantic.extensionButtonBackground,
 	"extensionButton.prominentHoverBackground": semantic.extensionButtonHover,
@@ -683,4 +688,5 @@ export const vscodeColors: Record<string, string> = {
 	"scm.historyItemDeletionsForeground": semantic.scmHistoryDeletions,
 	"scm.historyItemStatisticsBorder": semantic.scmHistoryStatisticsBorder,
 	"scm.historyItemSelectedStatisticsBorder": semantic.scmHistorySelectedStatisticsBorder,
-};
+	};
+}

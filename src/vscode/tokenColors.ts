@@ -3,11 +3,13 @@
  * TextMate scope rules for syntax highlighting
  */
 
-import { semantic } from "../palette";
-import { tokens } from "../tokens";
+import type { Semantic } from "../palette";
+import { createTokens } from "../tokens";
 import type { VSCodeTokenColor } from "../types";
 
-export const vscodeTokenColors: VSCodeTokenColor[] = [
+export function createTokenColors(semantic: Semantic): VSCodeTokenColor[] {
+	const tokens = createTokens(semantic);
+	return [
 	{
 		name: "Punctuation",
 		scope: ["punctuation", "meta.brace"],
@@ -360,4 +362,5 @@ export const vscodeTokenColors: VSCodeTokenColor[] = [
 			fontStyle: "italic",
 		},
 	},
-];
+	];
+}
