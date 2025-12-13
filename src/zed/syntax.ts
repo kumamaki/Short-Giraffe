@@ -24,39 +24,27 @@ function toZedStyle(
 }
 
 export const zedSyntax: Record<string, ZedSyntaxStyle> = {
+	// -------------------------------------------------------------------------
+	// Core syntax
+	// -------------------------------------------------------------------------
 	boolean: toZedStyle(semantic.zedSyntaxBoolean, tokens.boolean.fontStyle, 400),
 	constant: toZedStyle(semantic.zedSyntaxConstant, "italic", 300),
-	constructor: {},
+	constructor: toZedStyle(semantic.zedSyntaxConstructor),
 	embedded: toZedStyle(semantic.zedSyntaxEmbedded),
-	emphasis: {},
-	"emphasis.strong": { font_weight: 700 },
 	enum: toZedStyle(semantic.zedSyntaxEnum),
 	function: toZedStyle(semantic.zedSyntaxFunction),
 	hint: toZedStyle(semantic.zedSyntaxHint),
 	keyword: toZedStyle(semantic.zedSyntaxKeyword, tokens.keyword.fontStyle),
 	label: toZedStyle(semantic.zedSyntaxLabel),
-	link_text: {},
-	link_uri: {},
 	number: toZedStyle(semantic.zedSyntaxNumber, undefined, 400),
 	operator: toZedStyle(semantic.zedSyntaxOperator, undefined, 400),
-	predictive: {},
-	preproc: {},
-	primary: {},
 	property: toZedStyle(semantic.zedSyntaxProperty),
-	punctuation: toZedStyle(semantic.zedSyntaxPunctuation),
-	"punctuation.bracket": toZedStyle(semantic.zedSyntaxPunctuationBracket),
-	"punctuation.delimiter": toZedStyle(semantic.zedSyntaxPunctuationBracket),
-	"punctuation.list_marker": toZedStyle(semantic.zedSyntaxPunctuationBracket),
-	"punctuation.special": toZedStyle(semantic.zedSyntaxPunctuationBracket),
-	string: toZedStyle(semantic.zedSyntaxString),
-	"string.escape": {},
-	"string.regex": {},
-	"string.special": {},
-	"string.special.symbol": {},
-	tag: toZedStyle(semantic.zedSyntaxTag),
-	"text.literal": toZedStyle(semantic.zedSyntaxTextLiteral),
-	title: {},
 	type: toZedStyle(semantic.zedSyntaxType),
+	comment: toZedStyle(semantic.zedSyntaxComment),
+
+	// -------------------------------------------------------------------------
+	// Variables
+	// -------------------------------------------------------------------------
 	variable: {
 		color: semantic.zedSyntaxVariable,
 		font_style: null,
@@ -67,6 +55,41 @@ export const zedSyntax: Record<string, ZedSyntaxStyle> = {
 		font_style: null,
 		font_weight: null,
 	},
-	variant: {},
-	comment: toZedStyle(semantic.zedSyntaxComment),
+	variant: toZedStyle(semantic.zedSyntaxVariant),
+
+	// -------------------------------------------------------------------------
+	// Strings
+	// -------------------------------------------------------------------------
+	string: toZedStyle(semantic.zedSyntaxString),
+	"string.escape": toZedStyle(semantic.zedSyntaxStringEscape),
+	"string.regex": toZedStyle(semantic.zedSyntaxStringRegex),
+	"string.special": toZedStyle(semantic.zedSyntaxStringSpecial),
+	"string.special.symbol": toZedStyle(semantic.zedSyntaxStringSymbol),
+
+	// -------------------------------------------------------------------------
+	// Punctuation
+	// -------------------------------------------------------------------------
+	punctuation: toZedStyle(semantic.zedSyntaxPunctuation),
+	"punctuation.bracket": toZedStyle(semantic.zedSyntaxPunctuationBracket),
+	"punctuation.delimiter": toZedStyle(semantic.zedSyntaxPunctuationBracket),
+	"punctuation.list_marker": toZedStyle(semantic.zedSyntaxPunctuationBracket),
+	"punctuation.special": toZedStyle(semantic.zedSyntaxPunctuationBracket),
+
+	// -------------------------------------------------------------------------
+	// Tags & markup
+	// -------------------------------------------------------------------------
+	tag: toZedStyle(semantic.zedSyntaxTag),
+	"text.literal": toZedStyle(semantic.zedSyntaxTextLiteral),
+	title: toZedStyle(semantic.zedSyntaxTitle),
+	link_text: toZedStyle(semantic.zedSyntaxLinkText),
+	link_uri: toZedStyle(semantic.zedSyntaxLinkUri),
+	emphasis: { font_style: "italic" },
+	"emphasis.strong": { font_weight: 700 },
+
+	// -------------------------------------------------------------------------
+	// Preprocessor & meta
+	// -------------------------------------------------------------------------
+	preproc: toZedStyle(semantic.zedSyntaxPreproc),
+	primary: toZedStyle(semantic.zedSyntaxPrimary),
+	predictive: toZedStyle(semantic.zedSyntaxPredictive),
 };
