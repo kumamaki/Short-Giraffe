@@ -177,7 +177,7 @@
 						"color": "#8BB8F9"
 					},
 					"enum": {
-						"color": "#FFB69E"
+						"color": "#FFB480"
 					},
 					"function": {
 						"color": "#5ccfe6"
@@ -201,7 +201,7 @@
 						"font_weight": 400
 					},
 					"property": {
-						"color": "#E9DEB7"
+						"color": "#FCFCCE"
 					},
 					"type": {
 						"color": "#cfbafa"
@@ -253,7 +253,7 @@
 						"color": "#A3A5AA"
 					},
 					"tag": {
-						"color": "#BCBCEF"
+						"color": "#FFCC6A"
 					},
 					"text.literal": {
 						"color": "#F6ABA8"
