@@ -15,8 +15,8 @@
 				"border.selected": "#FFB69E",
 				"panel.background": "#0d1016",
 				"created": "#45CAC2",
-				"deleted": "#E4A2AC",
-				"conflict": "#E4A2AC",
+				"deleted": "#F6ABA8",
+				"conflict": "#F6ABA8",
 				"ignored": "#535A69",
 				"modified": "#FFB69E",
 				"status_bar.background": "#141821",
@@ -161,7 +161,7 @@
 						"color": "#a6a7ab"
 					},
 					"string": {
-						"color": "#E4A2AC"
+						"color": "#F6ABA8"
 					},
 					"string.escape": {},
 					"string.regex": {},
@@ -171,7 +171,7 @@
 						"color": "#BCBCEF"
 					},
 					"text.literal": {
-						"color": "#E4A2AC"
+						"color": "#F6ABA8"
 					},
 					"title": {},
 					"type": {
