@@ -3,7 +3,7 @@
  * TextMate scope rules for syntax highlighting
  */
 
-import { primitives } from "../palette";
+import { semantic } from "../palette";
 import { tokens } from "../tokens";
 import type { VSCodeTokenColor } from "../types";
 
@@ -174,7 +174,7 @@ export const vscodeTokenColors: VSCodeTokenColor[] = [
 		name: "[XML] Tags :: strings",
 		scope: ["text.html.derivative", "meta.jsx.children"],
 		settings: {
-			foreground: primitives.textPrimary,
+			foreground: semantic.syntaxTagText,
 		},
 	},
 	{
@@ -221,7 +221,7 @@ export const vscodeTokenColors: VSCodeTokenColor[] = [
 			"source.less meta.property-list",
 		],
 		settings: {
-			foreground: primitives.textPrimary.toLowerCase(),
+			foreground: semantic.syntaxCSSProperty.toLowerCase(),
 		},
 	},
 	{
@@ -234,7 +234,7 @@ export const vscodeTokenColors: VSCodeTokenColor[] = [
 		],
 		settings: {
 			fontStyle: "normal",
-			foreground: primitives.textPrimaryAlt.toLowerCase(),
+			foreground: semantic.syntaxCSSPunctuation.toLowerCase(),
 		},
 	},
 	{
@@ -279,7 +279,7 @@ export const vscodeTokenColors: VSCodeTokenColor[] = [
 			"source.less constant.numeric",
 		],
 		settings: {
-			foreground: primitives.orangeCSS,
+			foreground: semantic.syntaxCSSConstant,
 		},
 	},
 	{
@@ -322,14 +322,14 @@ export const vscodeTokenColors: VSCodeTokenColor[] = [
 		name: "[Markdown] Punctuation",
 		scope: ["markup.heading.setext"],
 		settings: {
-			foreground: primitives.gray125,
+			foreground: semantic.syntaxMarkdownPunctuation,
 		},
 	},
 	{
 		name: "[Markdown] Quote",
 		scope: ["markup.quote"],
 		settings: {
-			foreground: primitives.purpleQuote,
+			foreground: semantic.syntaxMarkdownQuote,
 		},
 	},
 	{
