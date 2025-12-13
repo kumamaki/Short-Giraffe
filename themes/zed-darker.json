@@ -177,7 +177,7 @@
 						"color": "#8BB8F9"
 					},
 					"enum": {
-						"color": "#FFB69E"
+						"color": "#FFB480"
 					},
 					"function": {
 						"color": "#45CAC2"
@@ -193,21 +193,21 @@
 						"color": "#333842"
 					},
 					"number": {
-						"color": "#F5DA7A",
+						"color": "#F7C0A5",
 						"font_weight": 400
 					},
 					"operator": {
-						"color": "#F5DA7A",
+						"color": "#FFE074",
 						"font_weight": 400
 					},
 					"property": {
-						"color": "#E9DEB7"
+						"color": "#FCFCCE"
 					},
 					"type": {
-						"color": "#CBBDE7"
+						"color": "#9be7ff"
 					},
 					"comment": {
-						"color": "#535A69"
+						"color": "#414B5D"
 					},
 					"variable": {
 						"color": "#BBD2EE",
@@ -238,7 +238,7 @@
 						"color": "#5ccfe6"
 					},
 					"punctuation": {
-						"color": "#333842"
+						"color": "#7581A0"
 					},
 					"punctuation.bracket": {
 						"color": "#a6a7ab"
@@ -253,7 +253,7 @@
 						"color": "#a6a7ab"
 					},
 					"tag": {
-						"color": "#BCBCEF"
+						"color": "#FFCC6A"
 					},
 					"text.literal": {
 						"color": "#F6ABA8"
