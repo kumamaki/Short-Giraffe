@@ -553,7 +553,7 @@ export const semantic = {
 	zedElement: colors.gray675,
 	zedElementHover: colors.gray600,
 	zedGhostElementHover: colors.gray675,
-	zedTabActive: colors.gray675,
+	zedTabActive: `${colors.orange500}18`,
 	zedTabInactive: colors.gray800,
 	zedTabBar: colors.gray750,
 	zedTitleBar: colors.gray750,
@@ -966,7 +966,7 @@ export const semantic = {
 	// =========================================================================
 	zedElementActive: colors.gray550,
 	zedElementDisabled: colors.gray700,
-	zedElementSelected: colors.gray575,
+	zedElementSelected: colors.gray525,
 	zedGhostElementActive: colors.gray600,
 	zedGhostElementBackground: colors.transparent,
 	zedGhostElementDisabled: colors.gray700,
