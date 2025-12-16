@@ -1,4 +1,29 @@
+# Development files
 .vscode/**
 .vscode-test/**
+.git/**
 .gitignore
+.github/**
+.claude/**
+.beads/**
+
+# Source files (not needed at runtime)
+src/**
+tsconfig.json
+bun.lockb
+pnpm-lock.yaml
+
+# Zed-specific files
+themes/**
+extension.toml
+
+# Development files
+demo/**
+justfile
+*.vsix
+node_modules/**
+
+# Documentation (keep README and LICENSE)
+CLAUDE.md
 vsc-extension-quickstart.md
+pallette.jpg

@@ -16,7 +16,7 @@
 				"pane.focused_border": "#FFB69E",
 				"border": "#333842",
 				"border.focused": "#FFB69E",
-				"border.selected": "#FFB69E",
+				"border.selected": "#222833",
 				"border.transparent": "#FFFFFF00",
 				"border.variant": "#333842",
 				"border.disabled": "#191e2a",
