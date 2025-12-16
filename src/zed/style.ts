@@ -24,7 +24,7 @@ export function createZedStyle(semantic: Semantic): Record<string, string> {
 		// -------------------------------------------------------------------------
 		border: semantic.zedBorder,
 		"border.focused": semantic.zedBorderFocused,
-		"border.selected": semantic.zedBorderFocused,
+		"border.selected": semantic.zedBorderSelected,
 		"border.transparent": semantic.zedBorderTransparent,
 		"border.variant": semantic.zedBorderVariant,
 		"border.disabled": semantic.zedBorderDisabled,

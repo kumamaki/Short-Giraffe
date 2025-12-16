@@ -536,6 +536,7 @@ export const semantic = {
 	zedSurface: colors.gray900,
 	zedBorder: colors.gray675,
 	zedBorderFocused: colors.orange400,
+	zedBorderSelected: colors.gray575,
 	zedPanel: colors.gray750,
 	zedStatusBar: colors.gray750,
 	zedText: colors.cream150,
