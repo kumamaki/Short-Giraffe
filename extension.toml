@@ -5,15 +5,3 @@ schema_version = 1
 authors = ["kumamaki <8641684+kumamaki@users.noreply.github.com>"]
 description = "A dark theme with carefully picked colors"
 repository = "https://github.com/kumamaki/Short-Giraffe"
-
-[[themes]]
-name = "Short Giraffe"
-path = "themes/zed.json"
-
-[[themes]]
-name = "Short Giraffe Darker"
-path = "themes/zed-darker.json"
-
-[[themes]]
-name = "Short Giraffe High Contrast"
-path = "themes/zed-high-contrast.json"
