@@ -39,7 +39,10 @@
 	},
 	"scripts": {
 		"generate": "bun src/generate.ts",
-		"generate:watch": "bun --watch src/generate.ts"
+		"generate:watch": "bun --watch src/generate.ts",
+		"typecheck": "bun tsc --noEmit",
+		"typecheck:watch": "bun tsc --noEmit --watch",
+		"build": "bun run typecheck && bun run generate"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.3.4",
