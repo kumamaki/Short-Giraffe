@@ -84,12 +84,11 @@ function generateZedThemes(): void {
 function generateItermThemes(): void {
 	for (const variant of variants) {
 		const semantic = mergeVariant(variant);
-		const suffix = getFileSuffix(variant);
 
 		const colors = createItermColors(semantic);
 		const plist = generateItermPlist(colors);
 
-		const filename = `./src/iterm/Short Giraffe${suffix}.itermcolors`;
+		const filename = `./src/iterm/${variant.name}.itermcolors`;
 		writeFileSync(filename, plist);
 
 		console.log(`✓ Generated: ${filename}`);
