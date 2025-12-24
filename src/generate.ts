@@ -10,6 +10,8 @@ import { createTokenColors } from "./vscode/tokenColors";
 import { createSemanticTokenColors } from "./vscode/semantic";
 import { createZedStyle, createZedPlayers } from "./zed/style";
 import { createZedSyntax } from "./zed/syntax";
+import { createItermColors } from "./iterm/colors";
+import { generateItermPlist } from "./iterm/plist";
 import { variants, mergeVariant, getFileSuffix } from "./variants";
 import type { VSCodeTheme, ZedTheme, ZedStyle } from "./types";
 
@@ -76,6 +78,25 @@ function generateZedThemes(): void {
 }
 
 // =============================================================================
+// iTerm2 Theme Generation
+// =============================================================================
+
+function generateItermThemes(): void {
+	for (const variant of variants) {
+		const semantic = mergeVariant(variant);
+		const suffix = getFileSuffix(variant);
+
+		const colors = createItermColors(semantic);
+		const plist = generateItermPlist(colors);
+
+		const filename = `./src/iterm/Short Giraffe${suffix}.itermcolors`;
+		writeFileSync(filename, plist);
+
+		console.log(`✓ Generated: ${filename}`);
+	}
+}
+
+// =============================================================================
 // Main
 // =============================================================================
 
@@ -84,5 +105,6 @@ console.log(`Generating ${variants.length} theme variant(s)...\n`);
 
 generateVSCodeThemes();
 generateZedThemes();
+generateItermThemes();
 
 console.log("\n✨ Done!\n");
