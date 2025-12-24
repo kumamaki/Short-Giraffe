@@ -12,6 +12,7 @@ import { createZedStyle, createZedPlayers } from "./zed/style";
 import { createZedSyntax } from "./zed/syntax";
 import { createItermColors } from "./iterm/colors";
 import { generateItermPlist } from "./iterm/plist";
+import { createWarpTheme } from "./warp/theme";
 import { variants, mergeVariant, getFileSuffix } from "./variants";
 import type { VSCodeTheme, ZedTheme, ZedStyle } from "./types";
 
@@ -96,6 +97,23 @@ function generateItermThemes(): void {
 }
 
 // =============================================================================
+// Warp Theme Generation
+// =============================================================================
+
+function generateWarpThemes(): void {
+	for (const variant of variants) {
+		const semantic = mergeVariant(variant);
+
+		const yaml = createWarpTheme(semantic);
+
+		const filename = `./src/warp/${variant.name}.yaml`;
+		writeFileSync(filename, yaml);
+
+		console.log(`✓ Generated: ${filename}`);
+	}
+}
+
+// =============================================================================
 // Main
 // =============================================================================
 
@@ -105,5 +123,6 @@ console.log(`Generating ${variants.length} theme variant(s)...\n`);
 generateVSCodeThemes();
 generateZedThemes();
 generateItermThemes();
+generateWarpThemes();
 
 console.log("\n✨ Done!\n");
