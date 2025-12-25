@@ -13,6 +13,7 @@ import { createZedSyntax } from "./zed/syntax";
 import { createItermColors } from "./iterm/colors";
 import { generateItermPlist } from "./iterm/plist";
 import { createWarpTheme } from "./warp/theme";
+import { createGhosttyTheme } from "./ghostty/theme";
 import { variants, mergeVariant, getFileSuffix } from "./variants";
 import type { VSCodeTheme, ZedTheme, ZedStyle } from "./types";
 
@@ -114,6 +115,24 @@ function generateWarpThemes(): void {
 }
 
 // =============================================================================
+// Ghostty Theme Generation
+// =============================================================================
+
+function generateGhosttyThemes(): void {
+	for (const variant of variants) {
+		const semantic = mergeVariant(variant);
+
+		const config = createGhosttyTheme(semantic);
+
+		// Ghostty themes have no file extension
+		const filename = `./src/ghostty/${variant.name}`;
+		writeFileSync(filename, config);
+
+		console.log(`✓ Generated: ${filename}`);
+	}
+}
+
+// =============================================================================
 // Main
 // =============================================================================
 
@@ -124,5 +143,6 @@ generateVSCodeThemes();
 generateZedThemes();
 generateItermThemes();
 generateWarpThemes();
+generateGhosttyThemes();
 
 console.log("\n✨ Done!\n");
