@@ -2,7 +2,7 @@
 <b>Short Giraffe</b> Theme
 </h1>
 <p align="center">
-Minimalistic, dark and easy-to-eye syntax theme for VSCode and Zed.
+Minimalistic, dark and easy-to-eye syntax theme for VSCode, Zed, and your favorite terminals.
 </p>
 
 
@@ -33,7 +33,44 @@ Minimalistic, dark and easy-to-eye syntax theme for VSCode and Zed.
 - Pick **Short Giraffe** from the list and hit enter.
 - Done 🎉
 
+## Terminal Themes
 
+Short Giraffe is also available for popular terminal emulators. Each theme comes in three variants:
+- **Short Giraffe** - The original balanced dark theme
+- **Short Giraffe Darker** - Even darker background for OLED screens
+- **Short Giraffe High Contrast** - Maximum contrast for accessibility
+
+### iTerm2
+
+1. Open iTerm2 → Settings → Profiles → Colors
+2. Click "Color Presets..." dropdown → Import...
+3. Select a `.itermcolors` file from `src/iterm/`
+4. Select the imported preset from the dropdown
+
+### Ghostty
+
+Copy the theme files to your Ghostty themes directory:
+
+```bash
+mkdir -p ~/.config/ghostty/themes
+cp src/ghostty/* ~/.config/ghostty/themes/
+```
+
+Then add to your Ghostty config (`~/.config/ghostty/config`):
+```
+theme = Short Giraffe
+```
+
+### Warp
+
+Copy the theme files to your Warp themes directory:
+
+```bash
+mkdir -p ~/.warp/themes
+cp src/warp/*.yaml ~/.warp/themes/
+```
+
+Then select the theme in Warp: Settings → Appearance → Themes
 
 ---
 
