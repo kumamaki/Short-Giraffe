@@ -18,13 +18,57 @@ Minimalistic, dark and easy-to-eye syntax theme for VSCode, Zed, and your favori
 
 **Built from the ground up,** the Short Giraffe Theme uses a playful yet subtle color palette for a your coding experience.
 
-## Installation for Zed
+## Zed
 
 - Run Zed: Extensions
 - Search for Short Giraffe Theme and install
 - Done 🎉
 
-## Installation for VSCode
+## iTerm2
+
+1. Download a theme:
+   - [Short Giraffe](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/iterm/Short%20Giraffe.itermcolors)
+   - [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/iterm/Short%20Giraffe%20Darker.itermcolors)
+   - [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/iterm/Short%20Giraffe%20High%20Contrast.itermcolors)
+2. Open iTerm2 → Settings → Profiles → Colors
+3. Click "Color Presets..." dropdown → Import...
+4. Select the downloaded `.itermcolors` file
+5. Select the imported preset from the dropdown
+
+## Ghostty
+
+Install the theme directly:
+
+```bash
+mkdir -p ~/.config/ghostty/themes && curl -fsSL "https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/ghostty/Short%20Giraffe" -o ~/.config/ghostty/themes/"Short Giraffe"
+```
+
+Or download manually:
+- [Short Giraffe](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/ghostty/Short%20Giraffe)
+- [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/ghostty/Short%20Giraffe%20Darker)
+- [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/ghostty/Short%20Giraffe%20High%20Contrast)
+
+Then add to your Ghostty config (`~/.config/ghostty/config`):
+```
+theme = Short Giraffe
+```
+
+## Warp
+
+Install the theme directly:
+
+```bash
+mkdir -p ~/.warp/themes && curl -fsSL "https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/warp/Short%20Giraffe.yaml" -o ~/.warp/themes/"Short Giraffe.yaml"
+```
+
+Or download manually:
+- [Short Giraffe](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/warp/Short%20Giraffe.yaml)
+- [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/warp/Short%20Giraffe%20Darker.yaml)
+- [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/warp/Short%20Giraffe%20High%20Contrast.yaml)
+
+Then select the theme in Warp: Settings → Appearance → Themes
+
+## VSCode
 
 - Open Extensions on the sidebar.
 - Search for **Short Giraffe** Theme.
@@ -32,45 +76,6 @@ Minimalistic, dark and easy-to-eye syntax theme for VSCode, Zed, and your favori
 - ⌘ + ⇧ + p and type "Color Theme".
 - Pick **Short Giraffe** from the list and hit enter.
 - Done 🎉
-
-## Terminal Themes
-
-Short Giraffe is also available for popular terminal emulators. Each theme comes in three variants:
-- **Short Giraffe** - The original balanced dark theme
-- **Short Giraffe Darker** - Even darker background for OLED screens
-- **Short Giraffe High Contrast** - Maximum contrast for accessibility
-
-### iTerm2
-
-1. Open iTerm2 → Settings → Profiles → Colors
-2. Click "Color Presets..." dropdown → Import...
-3. Select a `.itermcolors` file from `src/iterm/`
-4. Select the imported preset from the dropdown
-
-### Ghostty
-
-Copy the theme files to your Ghostty themes directory:
-
-```bash
-mkdir -p ~/.config/ghostty/themes
-cp src/ghostty/* ~/.config/ghostty/themes/
-```
-
-Then add to your Ghostty config (`~/.config/ghostty/config`):
-```
-theme = Short Giraffe
-```
-
-### Warp
-
-Copy the theme files to your Warp themes directory:
-
-```bash
-mkdir -p ~/.warp/themes
-cp src/warp/*.yaml ~/.warp/themes/
-```
-
-Then select the theme in Warp: Settings → Appearance → Themes
 
 ---
 
