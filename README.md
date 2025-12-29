@@ -91,4 +91,4 @@ A harmonious blend of playful accents and soothing tones that will keep you focu
 
 ---
 
-🦒  Cheers to the **Short Giraffes** 🦒
+Cheers to the Short Giraffes
