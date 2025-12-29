@@ -24,12 +24,21 @@ Minimalistic, dark and easy-to-eye syntax theme for VSCode, Zed, and your favori
 - Search for Short Giraffe Theme and install
 - Done 🎉
 
+## VSCode
+
+- Open Extensions on the sidebar.
+- Search for **Short Giraffe** Theme.
+- Install & reload.
+- ⌘ + ⇧ + p and type "Color Theme".
+- Pick **Short Giraffe** from the list and hit enter.
+- Done 🎉
+
 ## iTerm2
 
 1. Download a theme:
-   - [Short Giraffe](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/iterm/Short%20Giraffe.itermcolors)
-   - [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/iterm/Short%20Giraffe%20Darker.itermcolors)
-   - [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/iterm/Short%20Giraffe%20High%20Contrast.itermcolors)
+   - [Short Giraffe](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/iterm/Short%20Giraffe.itermcolors)
+   - [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/iterm/Short%20Giraffe%20Darker.itermcolors)
+   - [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/iterm/Short%20Giraffe%20High%20Contrast.itermcolors)
 2. Open iTerm2 → Settings → Profiles → Colors
 3. Click "Color Presets..." dropdown → Import...
 4. Select the downloaded `.itermcolors` file
@@ -40,13 +49,13 @@ Minimalistic, dark and easy-to-eye syntax theme for VSCode, Zed, and your favori
 Install the theme directly:
 
 ```bash
-mkdir -p ~/.config/ghostty/themes && curl -fsSL "https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/ghostty/Short%20Giraffe" -o ~/.config/ghostty/themes/"Short Giraffe"
+mkdir -p ~/.config/ghostty/themes && curl -fsSL "https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/ghostty/Short%20Giraffe" -o ~/.config/ghostty/themes/"Short Giraffe"
 ```
 
 Or download manually:
-- [Short Giraffe](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/ghostty/Short%20Giraffe)
-- [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/ghostty/Short%20Giraffe%20Darker)
-- [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/ghostty/Short%20Giraffe%20High%20Contrast)
+- [Short Giraffe](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/ghostty/Short%20Giraffe)
+- [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/ghostty/Short%20Giraffe%20Darker)
+- [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/ghostty/Short%20Giraffe%20High%20Contrast)
 
 Then add to your Ghostty config (`~/.config/ghostty/config`):
 ```
@@ -58,24 +67,15 @@ theme = Short Giraffe
 Install the theme directly:
 
 ```bash
-mkdir -p ~/.warp/themes && curl -fsSL "https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/warp/Short%20Giraffe.yaml" -o ~/.warp/themes/"Short Giraffe.yaml"
+mkdir -p ~/.warp/themes && curl -fsSL "https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/warp/Short%20Giraffe.yaml" -o ~/.warp/themes/"Short Giraffe.yaml"
 ```
 
 Or download manually:
-- [Short Giraffe](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/warp/Short%20Giraffe.yaml)
-- [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/warp/Short%20Giraffe%20Darker.yaml)
-- [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/short-giraffe/main/src/warp/Short%20Giraffe%20High%20Contrast.yaml)
+- [Short Giraffe](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/warp/Short%20Giraffe.yaml)
+- [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/warp/Short%20Giraffe%20Darker.yaml)
+- [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/warp/Short%20Giraffe%20High%20Contrast.yaml)
 
 Then select the theme in Warp: Settings → Appearance → Themes
-
-## VSCode
-
-- Open Extensions on the sidebar.
-- Search for **Short Giraffe** Theme.
-- Install & reload.
-- ⌘ + ⇧ + p and type "Color Theme".
-- Pick **Short Giraffe** from the list and hit enter.
-- Done 🎉
 
 ---
 
