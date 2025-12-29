@@ -13,9 +13,6 @@ Minimalistic, dark and easy-to-eye syntax theme for VSCode, Zed, and your favori
   <img src="./logo-light.png" alt="Short Giraffe logo" height="270">
 </picture>
 </div>
-<div align="center">
-<h3>Short on drama, long on code visibility</h3>
-</div>
 
 
 ---
