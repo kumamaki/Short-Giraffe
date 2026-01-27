@@ -196,7 +196,9 @@ export function createVscodeColors(semantic: Semantic): Record<string, string> {
 	// Diff editor
 	// -------------------------------------------------------------------------
 	"diffEditor.insertedTextBackground": semantic.diffInserted,
+	"diffEditor.insertedLineBackground": semantic.diffInsertedLine,
 	"diffEditor.removedTextBackground": semantic.diffRemoved,
+	"diffEditor.removedLineBackground": semantic.diffRemovedLine,
 
 	// -------------------------------------------------------------------------
 	// Editor widget

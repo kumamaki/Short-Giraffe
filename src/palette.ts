@@ -247,8 +247,10 @@ export const semantic = {
 	// =========================================================================
 	// DIFF EDITOR
 	// =========================================================================
-	diffInserted: colors.green600,
-	diffRemoved: colors.red450,
+	diffInserted: "#82F28708",
+	diffRemoved: "#FF747408",
+	diffInsertedLine: "#82F28706",
+	diffRemovedLine: "#FF747406",
 
 	// =========================================================================
 	// SIDEBAR & ACTIVITY BAR
