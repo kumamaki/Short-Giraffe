@@ -4,6 +4,12 @@ All notable changes to Short Giraffe will be documented in this file.
 
 Based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.2.1] - 2026-05-07
+
+### Changed
+
+- Registry maintenance: refresh Zed extensions registry pointer
+
 ## [2.2.0] - 2026-01-27
 
 ### Added
