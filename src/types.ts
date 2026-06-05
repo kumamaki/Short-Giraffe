@@ -51,3 +51,9 @@ export interface ZedTheme {
 	type: "dark" | "light";
 	themes: ZedThemeDefinition[];
 }
+
+// opencode theme types
+export interface OpencodeTheme {
+	$schema: string;
+	theme: Record<string, string>;
+}

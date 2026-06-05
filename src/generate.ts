@@ -14,8 +14,9 @@ import { createItermColors } from "./iterm/colors";
 import { generateItermPlist } from "./iterm/plist";
 import { createWarpTheme } from "./warp/theme";
 import { createGhosttyTheme } from "./ghostty/theme";
+import { createOpencodeTheme } from "./opencode/theme";
 import { variants, mergeVariant, getFileSuffix } from "./variants";
-import type { VSCodeTheme, ZedTheme, ZedStyle } from "./types";
+import type { VSCodeTheme, ZedTheme, ZedStyle, OpencodeTheme } from "./types";
 
 // =============================================================================
 // VS Code Theme Generation
@@ -115,6 +116,25 @@ function generateWarpThemes(): void {
 }
 
 // =============================================================================
+// opencode Theme Generation
+// =============================================================================
+
+function generateOpencodeThemes(): void {
+	for (const variant of variants) {
+		const semantic = mergeVariant(variant);
+		const suffix = getFileSuffix(variant);
+
+		const theme: OpencodeTheme = createOpencodeTheme(semantic);
+
+		const variantTag = suffix ? `-${suffix.slice(1)}` : "";
+		const filename = `./.opencode/themes/short-giraffe${variantTag}.json`;
+		writeFileSync(filename, JSON.stringify(theme, null, 3) + "\n");
+
+		console.log(`✓ Generated: ${filename}`);
+	}
+}
+
+// =============================================================================
 // Ghostty Theme Generation
 // =============================================================================
 
@@ -144,5 +164,6 @@ generateZedThemes();
 generateItermThemes();
 generateWarpThemes();
 generateGhosttyThemes();
+generateOpencodeThemes();
 
 console.log("\n✨ Done!\n");
