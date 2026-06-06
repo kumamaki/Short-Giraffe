@@ -4,6 +4,13 @@ All notable changes to Short Giraffe will be documented in this file.
 
 Based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.3.0] - 2026-06-06
+
+### Added
+
+- opencode theme target with three variants (default, darker, high contrast)
+- Theme generator produces `.opencode/themes/short-giraffe*.json` alongside existing targets
+
 ## [2.2.1] - 2026-05-07
 
 ### Changed

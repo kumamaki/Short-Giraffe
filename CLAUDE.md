@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Short Giraffe is a dark color theme for VS Code and Zed editors. It's a dual-platform theme project that maintains separate but coordinated theme definitions for both editors.
+Short Giraffe is a dark color theme generated for VS Code, Zed, opencode, and terminals (iTerm2, Warp, Ghostty).
 
 ## Project Structure
 
@@ -18,11 +18,17 @@ Short Giraffe is a dark color theme for VS Code and Zed editors. It's a dual-pla
 │   │   ├── ui.ts           # 200+ UI color properties
 │   │   ├── tokenColors.ts  # TextMate scope rules
 │   │   └── semantic.ts     # Semantic token colors
-│   └── zed/                # Zed specific mappings
-│       ├── style.ts        # UI style properties
-│       └── syntax.ts       # Syntax highlighting
-├── vscode/theme.json       # Generated VS Code theme
-├── themes/zed.json         # Generated Zed theme
+│   ├── zed/                # Zed specific mappings
+│   │   ├── style.ts        # UI style properties
+│   │   └── syntax.ts       # Syntax highlighting
+│   ├── opencode/           # opencode theme mappings
+│   │   └── theme.ts        # ~50 color keys mapped to semantic colors
+│   ├── iterm/              # iTerm2 generation
+│   ├── warp/               # Warp generation
+│   └── ghostty/            # Ghostty generation
+├── vscode/theme*.json      # Generated VS Code themes (3 variants)
+├── themes/zed*.json        # Generated Zed themes (3 variants)
+├── .opencode/themes/       # Generated opencode themes (3 variants)
 ├── package.json            # VS Code extension manifest
 ├── extension.toml          # Zed extension manifest
 └── demo/                   # Demo files for testing
@@ -31,11 +37,15 @@ Short Giraffe is a dark color theme for VS Code and Zed editors. It's a dual-pla
 ## Core Architecture
 
 ### Single Source of Truth
-All colors are defined in `src/palette.ts`. The generator (`bun src/generate.ts`) produces both theme files:
-- `vscode/theme.json` - Generated from palette + VS Code mappings
-- `themes/zed.json` - Generated from palette + Zed mappings
+All colors are defined in `src/palette.ts`. The generator (`bun src/generate.ts`) produces theme files for all targets:
+- `vscode/theme*.json` - VS Code (3 variants)
+- `themes/zed*.json` - Zed (3 variants)
+- `.opencode/themes/short-giraffe*.json` - opencode (3 variants)
+- `src/iterm/*.itermcolors` - iTerm2 (3 variants)
+- `src/warp/*.yaml` - Warp (3 variants)
+- `src/ghostty/*` - Ghostty (3 variants)
 
-**Never edit theme.json or zed.json directly** - modify the source files in `src/` instead.
+**Never edit generated theme files directly** - modify the source files in `src/` instead.
 
 ### Color Palette
 Core colors defined in `src/palette.ts`:
@@ -66,7 +76,7 @@ Core colors defined in `src/palette.ts`:
 ## Development Commands
 
 ```bash
-# Generate both theme files from source
+# Generate all theme files from source
 pnpm generate
 
 # Watch mode - regenerate on source changes
@@ -81,7 +91,7 @@ pnpm exec tsc --noEmit
 1. **Modify colors**: Edit `src/palette.ts` to change color values
 2. **Modify syntax**: Edit `src/tokens.ts` or editor-specific files in `src/vscode/` or `src/zed/`
 3. **Regenerate**: Run `pnpm generate` to update theme files
-4. **Test**: Preview changes in VS Code or Zed
+4. **Test**: Preview changes in VS Code, Zed, or opencode
 5. **Commit**: Commit both source files AND generated theme files
 
 ## File Modification Guidelines
