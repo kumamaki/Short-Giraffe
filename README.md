@@ -78,6 +78,21 @@ Or download manually:
 
 Then select the theme in Warp: Settings → Appearance → Themes
 
+## opencode
+
+opencode loads themes from `~/.config/opencode/themes/`. Install all three variants:
+
+```bash
+mkdir -p ~/.config/opencode/themes && curl -fsSL "https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/.opencode/themes/short-giraffe.json" -o ~/.config/opencode/themes/short-giraffe.json && curl -fsSL "https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/.opencode/themes/short-giraffe-darker.json" -o ~/.config/opencode/themes/short-giraffe-darker.json && curl -fsSL "https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/.opencode/themes/short-giraffe-high-contrast.json" -o ~/.config/opencode/themes/short-giraffe-high-contrast.json
+```
+
+Or download manually:
+- [Short Giraffe](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/.opencode/themes/short-giraffe.json)
+- [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/.opencode/themes/short-giraffe-darker.json)
+- [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/.opencode/themes/short-giraffe-high-contrast.json)
+
+Activate the theme by setting `"theme": "short-giraffe"` in your `~/.config/opencode/tui.json`, or switch at runtime with `/theme short-giraffe` inside opencode.
+
 ---
 
 ## Color Pallette
