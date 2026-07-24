@@ -4,6 +4,14 @@ All notable changes to Short Giraffe will be documented in this file.
 
 Based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.4.0] - 2026-07-25
+
+### Added
+
+- Otty terminal theme target with three variants (default, darker, high contrast)
+- Rich Otty chrome (`token`, `panel`, `window`, `titlebar`, `sidebar`, `tab`, `container`) mapped from the shared palette
+- Theme generator produces `src/otty/*.ottytheme` alongside existing targets
+
 ## [2.3.0] - 2026-06-06
 
 ### Added

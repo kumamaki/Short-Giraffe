@@ -63,6 +63,29 @@ Then add to your Ghostty config (`~/.config/ghostty/config`):
 theme = Short Giraffe
 ```
 
+## Otty
+
+Import and activate the default variant:
+
+```bash
+otty theme import "https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/otty/Short%20Giraffe.ottytheme" --activate
+```
+
+Or from a local clone:
+
+```bash
+otty theme import "./src/otty/Short Giraffe.ottytheme" --activate
+otty theme import "./src/otty/Short Giraffe Darker.ottytheme"
+otty theme import "./src/otty/Short Giraffe High Contrast.ottytheme"
+```
+
+Download manually:
+- [Short Giraffe](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/otty/Short%20Giraffe.ottytheme)
+- [Short Giraffe Darker](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/otty/Short%20Giraffe%20Darker.ottytheme)
+- [Short Giraffe High Contrast](https://raw.githubusercontent.com/kumamaki/Short-Giraffe/main/src/otty/Short%20Giraffe%20High%20Contrast.ottytheme)
+
+Switch later with `otty config set theme short-giraffe` (or `short-giraffe-darker` / `short-giraffe-high-contrast`).
+
 ## Warp
 
 Install the theme directly:

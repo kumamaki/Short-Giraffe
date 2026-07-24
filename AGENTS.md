@@ -1,10 +1,10 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Project-level guidance for AI agents working in this repository.
 
 ## Project Overview
 
-Short Giraffe is a dark color theme generated for VS Code, Zed, opencode, and terminals (iTerm2, Warp, Ghostty).
+Short Giraffe is a dark color theme generated for VS Code, Zed, opencode, and terminals (iTerm2, Warp, Ghostty, Otty).
 
 ## Project Structure
 
@@ -25,7 +25,8 @@ Short Giraffe is a dark color theme generated for VS Code, Zed, opencode, and te
 │   │   └── theme.ts        # ~50 color keys mapped to semantic colors
 │   ├── iterm/              # iTerm2 generation
 │   ├── warp/               # Warp generation
-│   └── ghostty/            # Ghostty generation
+│   ├── ghostty/            # Ghostty generation
+│   └── otty/               # Otty generation (.ottytheme TOML)
 ├── vscode/theme*.json      # Generated VS Code themes (3 variants)
 ├── themes/zed*.json        # Generated Zed themes (3 variants)
 ├── .opencode/themes/       # Generated opencode themes (3 variants)
@@ -44,6 +45,7 @@ All colors are defined in `src/palette.ts`. The generator (`bun src/generate.ts`
 - `src/iterm/*.itermcolors` - iTerm2 (3 variants)
 - `src/warp/*.yaml` - Warp (3 variants)
 - `src/ghostty/*` - Ghostty (3 variants)
+- `src/otty/*.ottytheme` - Otty (3 variants)
 
 **Never edit generated theme files directly** - modify the source files in `src/` instead.
 
