@@ -14,6 +14,7 @@ import { createItermColors } from "./iterm/colors";
 import { generateItermPlist } from "./iterm/plist";
 import { createWarpTheme } from "./warp/theme";
 import { createGhosttyTheme } from "./ghostty/theme";
+import { createOttyTheme } from "./otty/theme";
 import { createOpencodeTheme } from "./opencode/theme";
 import { variants, mergeVariant, getFileSuffix } from "./variants";
 import type { VSCodeTheme, ZedTheme, ZedStyle, OpencodeTheme } from "./types";
@@ -153,6 +154,23 @@ function generateGhosttyThemes(): void {
 }
 
 // =============================================================================
+// Otty Theme Generation
+// =============================================================================
+
+function generateOttyThemes(): void {
+	for (const variant of variants) {
+		const semantic = mergeVariant(variant);
+
+		const toml = createOttyTheme(semantic, variant.name);
+
+		const filename = `./src/otty/${variant.name}.ottytheme`;
+		writeFileSync(filename, toml);
+
+		console.log(`✓ Generated: ${filename}`);
+	}
+}
+
+// =============================================================================
 // Main
 // =============================================================================
 
@@ -164,6 +182,7 @@ generateZedThemes();
 generateItermThemes();
 generateWarpThemes();
 generateGhosttyThemes();
+generateOttyThemes();
 generateOpencodeThemes();
 
 console.log("\n✨ Done!\n");
