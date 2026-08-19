@@ -533,45 +533,51 @@ export const semantic = {
 
 	// =========================================================================
 	// ZED-SPECIFIC
+	// Three planes: chrome (gray950) · panels (gray825) · editor (gray725)
 	// =========================================================================
-	zedBackground: colors.gray750,
-	zedSurface: colors.gray900,
-	zedBorder: colors.gray675,
+	zedBackground: colors.gray725,
+	zedSurface: colors.gray825,
+	zedBorder: `${colors.white}20`,
 	zedBorderFocused: colors.orange400,
-	zedBorderSelected: colors.gray575,
-	zedPanel: colors.gray750,
-	zedStatusBar: colors.gray750,
+	zedBorderSelected: colors.orange400,
+	zedPanel: colors.gray825,
+	zedStatusBar: colors.gray950,
 	zedText: colors.cream150,
 	zedTextMuted: colors.gray75,
+	zedTextPlaceholder: colors.gray175,
 	zedTextDisabled: colors.gray250,
 	zedTextAccent: colors.orange400,
 	zedEditorBackground: colors.gray725,
 	zedEditorForeground: colors.cream150,
 	zedEditorLineNumber: colors.gray400,
 	zedEditorIndentGuide: `${colors.white}10`,
-	zedEditorActiveLine: colors.gray675,
-	zedEditorHighlightedLine: colors.gray600,
+	zedEditorActiveLine: `${colors.orange400}10`,
+	zedEditorHighlightedLine: `${colors.orange400}25`,
 	zedEditorGutter: colors.gray725,
-	zedElevatedSurface: colors.gray900,
-	zedElement: colors.gray675,
-	zedElementHover: colors.gray600,
-	zedGhostElementHover: colors.gray675,
-	zedTabActive: `${colors.orange500}18`,
-	zedTabInactive: colors.gray800,
-	zedTabBar: colors.gray750,
-	zedTitleBar: colors.gray750,
-	zedToolbar: colors.gray750,
+	zedElevatedSurface: colors.gray850,
+	zedElement: colors.gray825,
+	zedElementHover: `${colors.orange400}20`,
+	zedGhostElementHover: `${colors.orange400}20`,
+	zedTabActive: colors.gray725,
+	zedTabInactive: colors.gray825,
+	zedTabBar: colors.gray825,
+	zedTitleBar: colors.gray950,
+	zedToolbar: colors.gray725,
 	zedPredictive: colors.gray75,
 	zedCreated: colors.cyan500,
 	zedDeleted: colors.pink500,
 	zedConflict: colors.pink500,
 	zedIgnored: colors.gray250,
 	zedModified: colors.orange400,
+	zedWarning: colors.yellow500,
 	zedWarningBg: colors.olive500,
+	zedError: colors.pink500,
 	zedErrorBg: colors.red800,
+	zedSuccess: colors.green500,
+	zedInfo: colors.cyan400,
 	zedHint: colors.gray250,
 	zedHintBg: colors.blue800,
-	zedDocHighlight: colors.gray375,
+	zedDocHighlight: `${colors.orange400}25`,
 
 	// =========================================================================
 	// ZED SYNTAX
@@ -967,18 +973,18 @@ export const semantic = {
 	// =========================================================================
 	// ZED ELEMENT STATES
 	// =========================================================================
-	zedElementActive: colors.gray550,
-	zedElementDisabled: colors.gray700,
-	zedElementSelected: colors.gray525,
-	zedGhostElementActive: colors.gray600,
+	zedElementActive: `${colors.orange400}35`,
+	zedElementDisabled: `${colors.gray75}30`,
+	zedElementSelected: `${colors.orange400}50`,
+	zedGhostElementActive: `${colors.orange400}35`,
 	zedGhostElementBackground: colors.transparent,
-	zedGhostElementDisabled: colors.gray700,
-	zedGhostElementSelected: colors.gray650,
+	zedGhostElementDisabled: `${colors.gray75}30`,
+	zedGhostElementSelected: `${colors.orange400}50`,
 
 	// =========================================================================
 	// ZED ICON COLORS
 	// =========================================================================
-	zedIcon: colors.gray75,
+	zedIcon: colors.cream150,
 	zedIconAccent: colors.orange400,
 	zedIconDisabled: colors.gray250,
 	zedIconMuted: colors.gray175,
@@ -1005,17 +1011,21 @@ export const semantic = {
 	// ZED BORDER VARIANTS
 	// =========================================================================
 	zedBorderTransparent: colors.transparent,
-	zedBorderVariant: colors.gray700,
-	zedBorderDisabled: colors.gray700,
+	zedBorderVariant: `${colors.white}20`,
+	zedBorderDisabled: `${colors.white}20`,
 
 	// =========================================================================
 	// ZED EDITOR REFINEMENTS
 	// =========================================================================
-	zedEditorActiveLineNumber: colors.gray100,
-	zedDocHighlightWrite: `${colors.orange400}30`,
-	zedEditorDocHighlightWrite: `${colors.orange400}30`,
-	zedEditorSubheaderBackground: colors.gray775,
-	zedEditorActiveWrapGuide: colors.gray400,
+	zedEditorActiveLineNumber: colors.orange400,
+	zedDocHighlightWrite: `${colors.orange400}70`,
+	zedEditorDocHighlightWrite: `${colors.orange400}70`,
+	zedEditorSubheaderBackground: colors.gray825,
+	zedEditorWrapGuide: `${colors.white}10`,
+	zedEditorActiveWrapGuide: `${colors.white}20`,
+	zedEditorIndentGuideActive: `${colors.white}20`,
+	zedEditorInvisible: `${colors.cream150}10`,
+	zedTitleBarInactive: colors.gray950,
 
 	// =========================================================================
 	// ZED PANEL FOCUS
@@ -1026,15 +1036,16 @@ export const semantic = {
 	// =========================================================================
 	// ZED SCROLLBAR REFINEMENTS
 	// =========================================================================
-	zedScrollbarThumbBorder: colors.transparent,
-	zedScrollbarThumbHover: `${colors.white}25`,
-	zedScrollbarTrackBackground: colors.transparent,
-	zedScrollbarTrackBorder: colors.transparent,
+	zedScrollbarThumb: `${colors.gray75}30`,
+	zedScrollbarThumbBorder: `${colors.white}20`,
+	zedScrollbarThumbHover: `${colors.orange400}50`,
+	zedScrollbarTrackBackground: `${colors.gray825}80`,
+	zedScrollbarTrackBorder: `${colors.white}10`,
 
 	// =========================================================================
 	// ZED DROP TARGET
 	// =========================================================================
-	zedDropTarget: `${colors.orange400}30`,
+	zedDropTarget: `${colors.orange400}20`,
 
 	// =========================================================================
 	// ZED SEARCH

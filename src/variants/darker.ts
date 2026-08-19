@@ -89,52 +89,29 @@ export const darker: Variant = {
 		notificationBackground: colors.gray675,
 
 		// =========================================================================
-		// ZED BACKGROUNDS
+		// ZED SURFACES
+		// chrome gray950 · panels gray900 · editor gray825 · elevated gray925
+		// Hairlines and coral washes stay on the base tokens.
 		// =========================================================================
-		// Main Zed backgrounds: gray750 → gray850
-		zedBackground: colors.gray850,
-		zedPanel: colors.gray850,
-		zedStatusBar: colors.gray850,
-		zedTitleBar: colors.gray850,
-		zedToolbar: colors.gray850,
-		zedTabBar: colors.gray850,
-
-		// Zed editor: gray725 → gray825
+		zedBackground: colors.gray825,
 		zedEditorBackground: colors.gray825,
 		zedEditorGutter: colors.gray825,
+		zedToolbar: colors.gray825,
+		zedTabActive: colors.gray825,
 
-		// Zed surfaces: gray900 → gray950
-		zedSurface: colors.gray950,
-		zedElevatedSurface: colors.gray950,
-
-		// Zed terminal: gray825 → gray900
+		zedPanel: colors.gray900,
+		zedSurface: colors.gray900,
+		zedTabBar: colors.gray900,
+		zedTabInactive: colors.gray900,
+		zedElement: colors.gray900,
+		zedEditorSubheaderBackground: colors.gray900,
 		zedTerminalBackground: colors.gray900,
+		zedScrollbarTrackBackground: `${colors.gray900}80`,
 
-		// =========================================================================
-		// ZED BORDERS & ELEMENTS
-		// =========================================================================
-		// Borders: gray675 → gray725
-		zedBorder: colors.gray725,
+		zedStatusBar: colors.gray950,
+		zedTitleBar: colors.gray950,
+		zedTitleBarInactive: colors.gray950,
 
-		// Border variant: gray700 → gray750
-		zedBorderVariant: colors.gray750,
-
-		// Elements: gray675 → gray725
-		zedElement: colors.gray725,
-		zedGhostElementHover: colors.gray725,
-
-		// Element hover: gray600 → gray650
-		zedElementHover: colors.gray650,
-		zedGhostElementActive: colors.gray650,
-
-		// Tabs: adjust accordingly
-		zedTabActive: colors.gray725,
-		zedTabInactive: colors.gray850,
-
-		// Editor lines: gray675 → gray725, gray600 → gray650
-		zedEditorActiveLine: colors.gray725,
-		zedEditorHighlightedLine: colors.gray650,
-		zedGhostElementSelected: colors.gray700,
-		zedElementSelected: colors.gray625,
+		zedElevatedSurface: colors.gray925,
 	},
 };

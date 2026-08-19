@@ -61,7 +61,7 @@ function generateZedThemes(): void {
 		};
 
 		const theme: ZedTheme = {
-			$schema: "https://zed.dev/schema/themes/v0.1.0.json",
+			$schema: "https://zed.dev/schema/themes/v0.2.0.json",
 			name: variant.name,
 			author: "kumamaki <8641684+kumamaki@users.noreply.github.com>",
 			type: "dark",

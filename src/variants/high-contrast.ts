@@ -128,43 +128,30 @@ export const highContrast: Variant = {
 		semanticEnum: colors.orange300,
 
 		// =========================================================================
-		// ZED BACKGROUNDS (All → gray950)
+		// ZED SURFACES
+		// chrome gray950 · panels gray900 · editor gray800
+		// Hairlines and coral washes stay on the base tokens.
 		// =========================================================================
-		zedBackground: colors.gray950,
-		zedPanel: colors.gray950,
+		zedBackground: colors.gray800,
+		zedEditorBackground: colors.gray800,
+		zedEditorGutter: colors.gray800,
+		zedToolbar: colors.gray800,
+		zedTabActive: colors.gray800,
+
+		zedPanel: colors.gray900,
+		zedSurface: colors.gray900,
+		zedTabBar: colors.gray900,
+		zedTabInactive: colors.gray900,
+		zedElement: colors.gray900,
+		zedEditorSubheaderBackground: colors.gray900,
+		zedTerminalBackground: colors.gray900,
+		zedScrollbarTrackBackground: `${colors.gray900}80`,
+
 		zedStatusBar: colors.gray950,
 		zedTitleBar: colors.gray950,
-		zedToolbar: colors.gray950,
-		zedTabBar: colors.gray950,
-		zedEditorBackground: colors.gray950,
-		zedEditorGutter: colors.gray950,
-		zedSurface: colors.gray925,
+		zedTitleBarInactive: colors.gray950,
+
 		zedElevatedSurface: colors.gray925,
-		zedTerminalBackground: colors.gray925,
-
-		// =========================================================================
-		// ZED BORDERS (Visible)
-		// =========================================================================
-		zedBorder: colors.gray400,
-		zedBorderVariant: colors.gray400,
-		zedBorderFocused: colors.orange400,
-		zedPanelFocusedBorder: colors.orange400,
-		zedPaneFocusedBorder: colors.orange400,
-
-		// =========================================================================
-		// ZED ELEMENTS (Adjusted for dark bg)
-		// =========================================================================
-		zedElement: colors.gray700,
-		zedElementHover: colors.gray650,
-		zedElementActive: colors.gray650,
-		zedElementSelected: colors.gray700,
-		zedGhostElementHover: colors.gray700,
-		zedGhostElementActive: colors.gray650,
-		zedGhostElementSelected: colors.gray700,
-		zedTabActive: colors.gray700,
-		zedTabInactive: colors.gray900,
-		zedEditorActiveLine: colors.gray800,
-		zedEditorHighlightedLine: colors.gray750,
 
 		// =========================================================================
 		// ZED TEXT (Maximum brightness)

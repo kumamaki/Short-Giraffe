@@ -34,7 +34,7 @@ export function createZedStyle(semantic: Semantic): Record<string, string> {
 		// -------------------------------------------------------------------------
 		text: semantic.zedText,
 		"text.muted": semantic.zedTextMuted,
-		"text.placeholder": semantic.zedTextMuted,
+		"text.placeholder": semantic.zedTextPlaceholder,
 		"text.disabled": semantic.zedTextDisabled,
 		"text.accent": semantic.zedTextAccent,
 		"link_text.hover": semantic.zedLinkTextHover,
@@ -56,6 +56,7 @@ export function createZedStyle(semantic: Semantic): Record<string, string> {
 		"element.active": semantic.zedElementActive,
 		"element.disabled": semantic.zedElementDisabled,
 		"element.selected": semantic.zedElementSelected,
+		"ghost_element.background": semantic.zedGhostElementBackground,
 		"ghost_element.hover": semantic.zedGhostElementHover,
 		"ghost_element.active": semantic.zedGhostElementActive,
 		"ghost_element.selected": semantic.zedGhostElementSelected,
@@ -68,9 +69,11 @@ export function createZedStyle(semantic: Semantic): Record<string, string> {
 		"editor.foreground": semantic.zedEditorForeground,
 		"editor.line_number": semantic.zedEditorLineNumber,
 		"editor.active_line_number": semantic.zedEditorActiveLineNumber,
-		"editor.invisible": semantic.zedEditorLineNumber,
+		"editor.invisible": semantic.zedEditorInvisible,
 		"editor.indent_guide": semantic.zedEditorIndentGuide,
-		"editor.wrap_guide": semantic.zedEditorLineNumber,
+		"editor.indent_guide_active": semantic.zedEditorIndentGuideActive,
+		"editor.wrap_guide": semantic.zedEditorWrapGuide,
+		"editor.active_wrap_guide": semantic.zedEditorActiveWrapGuide,
 		"editor.active_line.background": semantic.zedEditorActiveLine,
 		"editor.highlighted_line.background": semantic.zedEditorHighlightedLine,
 		"editor.gutter.background": semantic.zedEditorGutter,
@@ -89,6 +92,7 @@ export function createZedStyle(semantic: Semantic): Record<string, string> {
 		// Title bar & toolbars
 		// -------------------------------------------------------------------------
 		"title_bar.background": semantic.zedTitleBar,
+		"title_bar.inactive_background": semantic.zedTitleBarInactive,
 		"toolbar.background": semantic.zedToolbar,
 		"status_bar.background": semantic.zedStatusBar,
 
@@ -107,10 +111,14 @@ export function createZedStyle(semantic: Semantic): Record<string, string> {
 		// -------------------------------------------------------------------------
 		// Status indicators
 		// -------------------------------------------------------------------------
+		warning: semantic.zedWarning,
 		"warning.background": semantic.zedWarningBg,
 		"warning.border": semantic.zedWarningBg,
+		error: semantic.zedError,
 		"error.background": semantic.zedErrorBg,
 		"error.border": semantic.zedErrorBg,
+		success: semantic.zedSuccess,
+		info: semantic.zedInfo,
 		hint: semantic.zedHint,
 		"hint.background": semantic.zedHintBg,
 		"hint.border": semantic.zedHintBg,
@@ -128,6 +136,7 @@ export function createZedStyle(semantic: Semantic): Record<string, string> {
 		// -------------------------------------------------------------------------
 		// Scrollbar
 		// -------------------------------------------------------------------------
+		"scrollbar.thumb.background": semantic.zedScrollbarThumb,
 		"scrollbar.thumb.border": semantic.zedScrollbarThumbBorder,
 		"scrollbar.thumb.hover_background": semantic.zedScrollbarThumbHover,
 		"scrollbar.track.background": semantic.zedScrollbarTrackBackground,
