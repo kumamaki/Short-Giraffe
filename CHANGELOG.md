@@ -4,6 +4,13 @@ All notable changes to Short Giraffe will be documented in this file.
 
 Based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.5.1] - 2026-08-19
+
+### Changed
+
+- Zed package now lives in `zed/` (`extension.toml` + `themes/*.json`) so the gallery only sees Zed files
+- Oh My Pi theme moved to `omp/short-giraffe.json`
+
 ## [2.5.0] - 2026-08-19
 
 ### Changed

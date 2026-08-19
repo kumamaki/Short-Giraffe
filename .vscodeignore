@@ -14,8 +14,8 @@ bun.lockb
 pnpm-lock.yaml
 
 # Zed-specific files
-themes/**
-extension.toml
+zed/**
+omp/**
 
 # Development files
 demo/**

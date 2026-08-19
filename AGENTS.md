@@ -28,10 +28,12 @@ Short Giraffe is a dark color theme generated for VS Code, Zed, opencode, and te
 │   ├── ghostty/            # Ghostty generation
 │   └── otty/               # Otty generation (.ottytheme TOML)
 ├── vscode/theme*.json      # Generated VS Code themes (3 variants)
-├── themes/zed*.json        # Generated Zed themes (3 variants)
+├── zed/                    # Zed extension package (registry path = "zed")
+│   ├── extension.toml
+│   └── themes/zed*.json    # Generated Zed themes (3 variants)
+├── omp/short-giraffe.json  # Oh My Pi theme
 ├── .opencode/themes/       # Generated opencode themes (3 variants)
 ├── package.json            # VS Code extension manifest
-├── extension.toml          # Zed extension manifest
 └── demo/                   # Demo files for testing
 ```
 
@@ -40,7 +42,7 @@ Short Giraffe is a dark color theme generated for VS Code, Zed, opencode, and te
 ### Single Source of Truth
 All colors are defined in `src/palette.ts`. The generator (`bun src/generate.ts`) produces theme files for all targets:
 - `vscode/theme*.json` - VS Code (3 variants)
-- `themes/zed*.json` - Zed (3 variants)
+- `zed/themes/zed*.json` - Zed (3 variants)
 - `.opencode/themes/short-giraffe*.json` - opencode (3 variants)
 - `src/iterm/*.itermcolors` - iTerm2 (3 variants)
 - `src/warp/*.yaml` - Warp (3 variants)
@@ -72,8 +74,9 @@ Core colors defined in `src/palette.ts`:
 - Uses `.vsix` packaging for distribution
 
 ### Zed Extension
-- Follows Zed's extension format with `extension.toml`
-- Theme schema version: `v0.1.0.json`
+- Package lives in `zed/` (`extension.toml` + `themes/`)
+- Registry entry uses `path = "zed"`
+- Theme schema version: `v0.2.0.json`
 
 ## Development Commands
 
@@ -99,7 +102,7 @@ pnpm exec tsc --noEmit
 ## File Modification Guidelines
 
 When updating colors:
-1. **Edit source files only** - never edit `vscode/theme.json` or `themes/zed.json` directly
+1. **Edit source files only** - never edit `vscode/theme.json` or `zed/themes/zed.json` directly
 2. Test changes across multiple languages shown in `demo/` folder
 3. Ensure semantic highlighting tokens are properly defined
 4. Keep accessibility and readability in mind for the dark theme approach
@@ -108,5 +111,5 @@ When updating colors:
 
 Version numbers must be synchronized across:
 - `package.json` (VS Code)
-- `extension.toml` (Zed)
+- `zed/extension.toml` (Zed)
 - Update `CHANGELOG.md` for release notes

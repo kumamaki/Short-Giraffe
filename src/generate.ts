@@ -4,7 +4,7 @@
  * Supports multiple theme variants from a single source
  */
 
-import { writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { createVscodeColors } from "./vscode/ui";
 import { createTokenColors } from "./vscode/tokenColors";
 import { createSemanticTokenColors } from "./vscode/semantic";
@@ -49,6 +49,8 @@ function generateVSCodeThemes(): void {
 // =============================================================================
 
 function generateZedThemes(): void {
+	mkdirSync("./zed/themes", { recursive: true });
+
 	for (const variant of variants) {
 		const semantic = mergeVariant(variant);
 		const suffix = getFileSuffix(variant);
@@ -74,7 +76,7 @@ function generateZedThemes(): void {
 			],
 		};
 
-		const filename = `./themes/zed${suffix}.json`;
+		const filename = `./zed/themes/zed${suffix}.json`;
 		writeFileSync(filename, JSON.stringify(theme, null, "\t") + "\n");
 
 		console.log(`✓ Generated: ${filename}`);

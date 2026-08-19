@@ -8,7 +8,7 @@ project_dir := justfile_directory()
 develop:
     ln -sf "{{project_dir}}" ~/.vscode/extensions/short-giraffe-dev
     mkdir -p ~/.config/zed/themes
-    ln -sf "{{project_dir}}/themes/zed.json" ~/.config/zed/themes/short-giraffe.json
+    ln -sf "{{project_dir}}/zed/themes/zed.json" ~/.config/zed/themes/short-giraffe.json
     @echo "✓ Linked to VS Code and Zed"
     pnpm generate
     @echo "👀 Watching for changes... (Ctrl+C to stop)"
