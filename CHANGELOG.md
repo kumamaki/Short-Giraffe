@@ -4,6 +4,14 @@ All notable changes to Short Giraffe will be documented in this file.
 
 Based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.5.0] - 2026-08-19
+
+### Changed
+
+- Zed UI restack on the xy-zed contrast model: three navy planes, white hairlines, coral washes
+- Default, Darker, and High Contrast variants keep distinct chrome / panel / editor surfaces
+- Zed theme schema bumped to `v0.2.0`
+
 ## [2.4.0] - 2026-07-25
 
 ### Added
